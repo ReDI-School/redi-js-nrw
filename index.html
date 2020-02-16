@@ -1,0 +1,76 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/css/reveal.css" />
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/css/theme/white.css" />
+  <style type="text/css">
+    .reveal p {
+      text-align: left;
+    }
+
+    .reveal ul {
+      display: block;
+    }
+
+    .reveal ol {
+      display: block;
+    }
+
+    /* remove the ugly black border around images */
+    .reveal section img {
+      background: none;
+      border: none;
+      box-shadow: none;
+    }
+
+    /* more horizontal padding on code snippets */
+    code.language-js.hljs.javascript,
+    code.language-JavaScript.hljs {
+      padding: 5px 10px;
+    }
+
+    .reveal table {
+      font-size: xx-large;
+    }
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/highlight.js/styles/vs2015.css" />
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown="lesson1.md" data-charset="utf-8"></section>
+    </div>
+  </div>
+  <script src="https://unpkg.com/reveal.js/js/reveal.js"></script>
+  <script>
+    let link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'https://unpkg.com/reveal.js/css/print/pdf.css' : 'https://unpkg.com/reveal.js/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+
+    Reveal.initialize({
+      dependencies: [
+        {
+          src: 'https://unpkg.com/reveal.js/plugin/markdown/marked.js'
+        },
+        {
+          src: 'https://unpkg.com/reveal.js/plugin/markdown/markdown.js'
+        },
+        {
+          src: 'https://unpkg.com/reveal.js/plugin/highlight/highlight.js',
+          async: true
+        },
+        { src: 'https://unpkg.com/reveal.js/plugin/zoom-js/zoom.js', async: true },
+      ],
+      slideNumber: true,
+      hash: true,
+      controlsTutorial: false
+    });
+
+  </script>
+</body>
+
+</html>
