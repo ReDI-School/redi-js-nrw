@@ -1,11 +1,9 @@
 ### Table Of Contents
 
-<!-- .slide: style="font-size:50%" -->
+<!-- .slide: style="font-size:100%" -->
 
-1. Introduction: [1](#lesson1)
-1. Basic Data Types: [1](#lesson1:datatypes)
-1. Operators: [1](#lesson1:operators)
-1. Variables
+1. [Introduction](#lesson1): [Basic Data Types](#lesson1:datatypes) and [Operators](#lesson1:operators)
+1. [Variables](#lesson2): [Console](#lesson2:console), [Comments](#lesson2:comments) and [Homework](#lesson2:homework)
 1. If statements
 1. Functions
 1. Loops
