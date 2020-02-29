@@ -4,7 +4,7 @@
 
 1. [Introduction](#lesson1): [Basic Data Types](#lesson1:datatypes) and [Operators](#lesson1:operators)
 1. [Variables](#lesson2): [Console](#lesson2:console), [Comments](#lesson2:comments) and [Homework](#lesson2:homework)
-1. If statements
+1. [If statements](#lesson3)
 1. Functions
 1. Loops
 1. Arrays
@@ -279,7 +279,7 @@ These are called "Control Characters"
 
 ### Quiz: Which strings are correct?
 
-```none
+```plaintext
 "Hello"
 'World'
 "He said "hello" to me"
