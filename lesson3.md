@@ -534,3 +534,41 @@ if (day === 'Saturday') {
   * Everything else
 
 ---
+
+### Is this correct?
+
+```js
+let temperature = 7;
+
+if (temperature > 20) {
+  console.log("it's warm");
+} else if (temperature > 30) {
+  console.log("too hot!!!");
+} else if (temperature > 5) {
+  console.log("perfect.");
+} else {
+  console.log("it's a bit chilly.")
+}
+```
+
+Try with a temperature of 35, what does it print? <!-- .element: class="fragment" -->
+
+---
+
+### Correct solution
+
+```js
+let temperature = 35;
+
+if (temperature > 30) {
+  console.log("too hot!!!");
+} else if (temperature > 20) {
+  console.log("it's warm");
+} else if (temperature > 5) {
+  console.log("perfect.");
+} else {
+  console.log("it's a bit chilly.")
+}
+```
+
+---
