@@ -570,5 +570,3 @@ if (temperature > 30) {
   console.log("it's a bit chilly.")
 }
 ```
-
----

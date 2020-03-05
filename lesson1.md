@@ -5,7 +5,7 @@
 1. [Introduction](#lesson1): [Basic Data Types](#lesson1:datatypes) and [Operators](#lesson1:operators)
 1. [Variables](#lesson2): [Console](#lesson2:console), [Comments](#lesson2:comments) and [Homework](#lesson2:homework)
 1. [If statements](#lesson3)
-1. Functions
+1. [Functions](#lesson4), Homework [1](#lesson4:homework1) and [2](#lesson4:homework2)
 1. Loops
 1. Arrays
 1. Objects
