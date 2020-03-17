@@ -1,6 +1,6 @@
 ### Table Of Contents
 
-<!-- .slide: style="font-size:100%" -->
+<!-- .slide: style="font-size:80%" -->
 
 1. [Introduction](#lesson1): [Basic Data Types](#lesson1:datatypes) and [Operators](#lesson1:operators)
 1. [Variables](#lesson2): [Console](#lesson2:console), [Comments](#lesson2:comments) and [Homework](#lesson2:homework)
@@ -12,6 +12,8 @@
 1. DOM
 1. Web APIs
 1. Libraries
+
+Direct link to lessons: [1](#lesson1) [2](#lesson2) [3](#lesson3) [4](#lesson4) [5](#lesson5)
 
 ---
 
