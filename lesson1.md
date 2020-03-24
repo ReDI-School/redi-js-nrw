@@ -7,13 +7,13 @@
 1. [If statements](#lesson3)
 1. [Functions](#lesson4), Homework [1](#lesson4:homework1) and [2](#lesson4:homework2)
 1. [Loops](#lesson6:loops)
-1. Arrays
+1. [Arrays](#lesson7:arrays)
 1. Objects
 1. DOM
 1. Web APIs
 1. Libraries
 
-Direct link to lessons: [1](#lesson1) [2](#lesson2) [3](#lesson3) [4](#lesson4) [5](#lesson5) [6](#lesson6)
+Direct link to lessons: [1](#lesson1) [2](#lesson2) [3](#lesson3) [4](#lesson4) [5](#lesson5) [6](#lesson6) [7](#lesson7)
 
 ---
 
