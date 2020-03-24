@@ -6,8 +6,6 @@ Lesson 7, Tuesday, 2020-03-24
 
 ---
 
-<!-- .slide: id="lesson7:arrays" -->
-
 ### Refresher: Types
 
 ```js
@@ -22,6 +20,8 @@ let isProgrammer = true;
 ```
 
 ---
+
+<!-- .slide: id="lesson7:arrays" -->
 
 ### Arrays
 
@@ -226,7 +226,7 @@ Create an array containing a few numbers, ex `[3, 2, 9, 5, 6]`
 
 ---
 
-### Homework
+### Bonus Exercise
 
 * Create a new array containing only numbers of the original array that are smaller than 5
  * ex: given input `[1, 3, 7, 2, 9, 5]`, return `[1, 3, 2]`
