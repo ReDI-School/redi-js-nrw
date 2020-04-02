@@ -293,3 +293,13 @@ input.value = "world"; // changed the value of the input to "world"
 * Create a JavaScript file. Use `document.getElementById()` to get your input element
 * Look at the properties of the HTML Input: https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement
 * Try to set / get a few
+
+---
+
+### Homework - DOM
+
+* Create an empty HTML file. Add an `<input>`, a `<button>` and a `<div>`
+* Add a function to your JavaScript file
+* In the `onclick` attribute of your `<button>`, call that function
+* Inside your function, get the value attribute from your input
+* Set the background color of the `<div>` to the value of your input
