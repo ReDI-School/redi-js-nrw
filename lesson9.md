@@ -190,6 +190,8 @@ let person = {
 
 ---
 
+<!-- .slide: id="lesson9:DOM" -->
+
 # DOM
 
 ---

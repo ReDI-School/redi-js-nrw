@@ -9,7 +9,7 @@
 1. [Loops](#lesson6:loops)
 1. [Arrays](#lesson7:arrays)
 1. [Objects](#lesson8:objects)
-1. DOM
+1. [DOM](#lesson9:DOM)
 1. Web APIs
 1. Libraries
 
