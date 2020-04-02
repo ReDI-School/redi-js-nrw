@@ -152,7 +152,7 @@ function isInRange(value, range) {
 
 ### Nesting Objects
 
-* They value in the key-value pairs can be any data type
+* The value in the key-value pairs can be any data type
 * Object is a data type
 
 ```js
