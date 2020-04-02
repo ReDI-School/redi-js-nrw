@@ -286,6 +286,7 @@ me.age = me.age + 30;
 // and 'log' is a function defined on that object
 console.log(myName);
 ```
+
 ---
 
 what would happen here?
