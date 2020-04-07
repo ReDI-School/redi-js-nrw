@@ -67,10 +67,10 @@ remove the value from the input field after the user presses the button.
 ```js
 function setBackground() {
   let inputElement = document.getElementById("colorInput");
-  let color = input.value;
+  let color = inputElement.value;
   let divElement = document.getElementById("myDiv");
   divElement.style.backgroundColor = color;
-  input.value = ''; // this removes the value
+  inputElement.value = ''; // this removes the value
 }
 ```
 
@@ -101,7 +101,7 @@ Change the text content of the div to the color that the user choose!
 ```js
 function setBackground() {
   let inputElement = document.getElementById("colorInput");
-  let color = input.value;
+  let color = inputElement.value;
   let divElement = document.getElementById("myDiv");
   divElement.style.backgroundColor = color;
   input.value = '';
