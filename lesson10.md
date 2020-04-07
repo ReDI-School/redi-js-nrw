@@ -47,7 +47,7 @@ input.value = "world";
 ```js
 function setBackground() {
   let inputElement = document.getElementById("colorInput");
-  let color = input.value;
+  let color = inputElement.value;
   let divElement = document.getElementById("myDiv");
   divElement.style.backgroundColor = color;
 }
