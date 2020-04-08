@@ -189,3 +189,10 @@ itemElement.style.backgroundColor = color;
 When we click on an item in our list, we want to change the background color of the div to that of the item.
 
 
+```js
+itemElement.onclick = function () {
+  divElement.style.backgroundColor = color;
+};
+```
+<!-- .element: class="fragment" -->
+
