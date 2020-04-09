@@ -67,6 +67,36 @@ listElement.appendChild(itemElement);
 
 ---
 
+### Converting string to number
+
+What is the result?
+
+```js
+let a = 1 + 1;
+let b = 1 + "1";
+```
+
+```js
+let a = 1 + 1;    // 2
+let b = 1 + "1";  // "11"
+```
+<!-- .element: class="fragment" -->
+
+---
+
+### Converting string to number
+
+We can turn a string to a number using `parseInt` or `parseFloat`:
+
+```js
+let a = parseInt("42");   // a is number: 42
+let b = parseInt("-42");  // b is number: -42
+let c = parseInt("1.1");  // c is number: 1
+let d = parseFloat("1.1") // d is number: 1.1
+```
+
+---
+
 # Preject
 
 ---
