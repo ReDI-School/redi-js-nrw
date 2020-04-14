@@ -299,7 +299,7 @@ let items = todoListElement.children;
 
 ```js
 let items = todoListElement.children;
-for (let i = 0; i < items.count; ++i) {
+for (let i = 0; i < items.length; i++) {
     console.log("item: " + items[i].textContent);
 }
 ```
