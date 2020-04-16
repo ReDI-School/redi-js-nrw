@@ -2,7 +2,7 @@
 
 # Basic Frontend - Spring 2020
 
-Lesson 12, Thursday, 2020-04-14
+Lesson 12, Tuesday, 2020-04-14
 
 ---
 
@@ -176,7 +176,7 @@ let foo = function() {
 * Variables containing a function can be used exactly like variables containing a `number`, `array` or `object`:
 
 ```js
-let foo = function() {    
+let foo = function() {
   console.log("foo was called");
 }
 let bar = foo;  // now foo and bar point to the same function
@@ -191,7 +191,7 @@ bar();          // prints "foo was called"
 
 ```js
 let x = 42;
-let foo = function() {    
+let foo = function() {
   console.log("foo was called with x: " + x);
 }
 let bar = foo;  // now foo and bar point to the same function
