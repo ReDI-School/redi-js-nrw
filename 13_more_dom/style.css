@@ -1,0 +1,26 @@
+.card {
+  width: 150px;
+  height: 100px;
+  position: relative;
+}
+
+.fillParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: left 1s;
+}
+
+.layer {
+  outline: 1px solid black;
+}
+
+.cover {
+  background-color: orange;
+}
