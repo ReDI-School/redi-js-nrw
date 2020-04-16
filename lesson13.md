@@ -165,10 +165,10 @@ function createCardDiv() {
   let card = document.createElement('div');
   card.classList.add('card');
 
-  let layer = createLayerDiv(item);
+  let layer = createLayerDiv();
   card.appendChild(layer);
 
-  let cover = createCoverDiv(item);
+  let cover = createCoverDiv();
   card.appendChild(cover);
   return card;
 }
@@ -248,15 +248,15 @@ cover.onclick = function() {
 
 ---
 
-### Exercise
+### Homework
 
 Make the divs customizable, we should be able to call the function like this:
 
 ```js
 let options = {
   layerText: 'new Layer Text',
-  coverText:  'new Cover Text',
-  coverBackgroundColor: '#FFAB40';
+  coverText: 'new Cover Text',
+  coverBackgroundColor: '#FFAB40'
 };
 let card = createCardDiv(options);
 ```
@@ -264,7 +264,7 @@ This should change the text in the layer and the cover, as well as the backgroun
 
 ---
 
-### Exercise
+### Homework
 
 Copy this data to your JavaScript file:
 ```js
