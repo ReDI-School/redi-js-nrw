@@ -31,7 +31,7 @@ const template =
 
 # Basic Frontend - Spring 2020
 
-Lesson ${nextLesson}, ${nextDate.getDay() == 2 ? "Tuesday" : Thursday}, ${nextDate.getFullYear()}-${nextDate.getMonth() + 1}-${nextDate.getDate()}
+Lesson ${nextLesson}, ${nextDate.getDay() == 2 ? "Tuesday" : "Thursday"}, ${nextDate.getFullYear()}-${nextDate.getMonth() + 1}-${nextDate.getDate()}
 
 ---
 `;
