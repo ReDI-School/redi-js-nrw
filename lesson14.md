@@ -122,7 +122,7 @@ console.log(me.name); // "John"
 
 ### object <-> JSON
 
-JavaScript offers us a an API to convert an object to JSON and vice versa:
+JavaScript offers us an API to convert an object to JSON and vice versa:
 
 ```js
 let obj = {
