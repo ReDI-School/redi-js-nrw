@@ -321,5 +321,3 @@ fetchDog();
 * Look at the result
 * Use the `fetch` API to fetch the JSON. Can you show the name, capital, population and the flag on your web page?
 * BONUS: Add an `<input>` field where the user can enter a country name, then show details about that country
-
----
