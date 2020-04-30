@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Address book</title>
+  </head>
+  <body>
+    <h3>Add new contact</h3>
+    <div>
+      <label for="firstNameInput">First name:</label>
+      <input id="firstNameInput" type="text">
+      <br/>
+      
+      <label for="lastNameInput">Last name:</label>
+      <input id="lastNameInput" type="text">
+      <br/>
+      
+      <label for="emailInput">Email address:</label>
+      <input id="emailInput" type="text">
+      <br/>
+      
+      <button onclick="handleAddContactClick()">Add contact</button>
+    </div>
+
+    <hr/>
+
+    <h3>Saved contacts</h3>
+    <ul id="contactList"></ul>
+
+    <script src="main.js"></script>
+  </body>
+</html>
