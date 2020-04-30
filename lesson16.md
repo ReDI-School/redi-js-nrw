@@ -88,7 +88,7 @@ Remeber that arrays can also be converted to and from JSON!
 ### In-class project: Create an address book
 
 Basic requirements:
-* It should be form with labels and inputs for first name, last name, and email address, with a save button
+* It should be a form with labels and inputs for first name, last name, and email address, with a save button
 * It should display all contacts in a list below the form
 
 ---
