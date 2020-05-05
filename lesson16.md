@@ -2,7 +2,7 @@
 
 # Basic Frontend - Spring 2020
 
-Lesson 16, Thursday, 2020-4-30
+Lesson 16, Thursday, 2020-04-30
 
 ---
 
