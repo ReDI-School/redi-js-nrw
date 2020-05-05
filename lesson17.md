@@ -19,7 +19,7 @@ let translations = {
 }
 ```
 
-We don't know which keys (translations) exist exist in the REST API response.
+We don't know which keys (translations) exist in the REST API response.
 
 ---
 
