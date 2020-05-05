@@ -200,7 +200,7 @@ function addContactClick() {
         emailAddress: emailAddress
     };
 
-    myContacts.push(contact);
+    myContacts.push(newContact);
 }
 ```
 
@@ -224,13 +224,15 @@ function renderContacts() {
     listElement.innerHTML = "";
 
     // Re-add all of our contacts
-    for (let contact of myContacts) {
+    for (let i = 0; i < myContacts.length; i++) {
+        let contact = myContacts[i];
         let newContactListItem = document.createElement('li');
         newContactListItem.textContent = contact.firstName + ' ' + contact.lastName + ': ' + contact.emailAddress;
         listElement.appendChild(newContactListItem);
     }
 }
 ```
+Now this needs to be called whenever you call .push on myContacts
 
 ---
 
