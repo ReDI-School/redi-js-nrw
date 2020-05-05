@@ -1,4 +1,3 @@
-
 let myContacts = [];
 
 function handleAddContactClick() {
@@ -51,7 +50,7 @@ function saveContacts() {
 
 function loadContacts() {
     let savedContactsAsJsonString = window.localStorage.getItem(LOCAL_STORAGE_KEY);
-    if (savedContactsAsJsonString) {
+    if (savedContactsAsJsonString !== null) {
         myContacts = JSON.parse(savedContactsAsJsonString);
     }
 }
