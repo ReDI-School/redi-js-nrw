@@ -96,15 +96,15 @@ for (let value of exampleArray) {
 }
 ```
 
-* Note: `for...of` only works on arrays (iterables), not on generic objects
+* `for...of` only works on arrays (iterables), not on generic objects
 
 ---
 
 ### Recap: Quiz
 
-* Quiz sample URL: https://opentdb.com/api.php?amount=10&category=18&difficulty=medium&type=multiple
-* Were you able to download that URL from within JavaScript?
-* Were you able to read/explain the response?
-* Were you able to extract the relevant data from the response?
-* Were you able to render that data in HTML?
-* Were you able to add the logic of shuffling / state management?
+1. Quiz sample URL: https://opentdb.com/api.php?amount=10&category=18&difficulty=medium&type=multiple
+1. Were you able to download that URL from within JavaScript?
+1. Were you able to read/explain the response?
+1. Were you able to extract the relevant data from the response?
+1. Were you able to render that data in HTML?
+1. Were you able to add the logic of shuffling / state management?
