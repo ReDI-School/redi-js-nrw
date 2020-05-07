@@ -20,7 +20,7 @@ These are meant to be simple use cases for automating manual business activity
 
 Feel free to decide your own difficultly level
 
-Copy the data variables into your code editor to get you started, then write your own function. you can set the output by loggings the return value to the console.
+Copy the data variables into your code editor to get you started, then write your own function. you can set the output by logging the return value to the console.
 
 ---
 
