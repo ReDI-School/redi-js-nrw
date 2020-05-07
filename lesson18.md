@@ -68,7 +68,9 @@ Write a function that takes an array of customer data and returns an array of st
 
 Price should be shown in local format
 
-Data:
+Data (see next slide)
+
+---
 
 ```js
 let customerData = [
@@ -166,7 +168,9 @@ let cinemaTimes = {
 
 Write a function that takes cinema times and a string containing the day of the week that returns the available movies on that day with session times.
 
-Data:
+Data (see next slide):
+
+---
 
 ```js
 let movieDisplayNames = {
@@ -196,7 +200,9 @@ let cinemaTimes = {
 
 Write a function that takes cinema times, preferred langauge and a string containing the day of the week that returns the available movies on that day with session times in their preferred langauge.
 
-Data:
+Data (see next slide)
+
+---
 
 ```js
 let movieTranslations = {
