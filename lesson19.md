@@ -131,3 +131,80 @@ console.log(currentKitchenStorage);
 
 /// currentKitchenStorage === initialKitchenStorage should be true
 ```
+
+### The Clicking Game
+
+For this exercise, we will make a fun clicking game.
+
+The HTML and JS framework is ready for you in a template.
+
+Your task in to write the functions.
+
+---
+
+### Demonstration of Working Game
+
+---
+
+### Instructions
+
+Instead of difficulties, we will all do each step, do what you can in the class and the remainder will be homework
+
+Link to template: https://jsbin.com/mosefizupo/edit?html,js,output
+
+Feel free to either copy this code into your editor, or write it directly in JSBin
+
+---
+
+### Step 1
+
+Update the score and the points when the click me button is clicked
+
+complete the function:
+
+```js
+function handleButtonClick() {
+  //your code here
+}
+```
+
+---
+
+### Step 2
+
+Make single clicks worth more each time you upgrade the clicker
+
+complete the function:
+
+```js
+function handleUpgradeClick() {
+  //your code here
+}
+```
+
+---
+
+### Step 3
+
+Make the html background black and text white when user purchases dark mode
+
+complete the function:
+
+```js
+function handleDarkModeClick() {
+  //your code here
+}
+```
+
+---
+
+### Extended Homework
+
+Make the game your own, add next functions and buttons!
+Fun ideas:
+
+1. make upgrade buttons that make your game pretty
+1. add a auto click timer
+1. add a story like in [James's Career Changer Game](https://codepen.io/crushford/pen/zezrWR)
+
+---
