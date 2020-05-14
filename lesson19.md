@@ -109,6 +109,8 @@ currentKitchenStorage = entireOrder(
 console.log(currentKitchenStorage);
 ```
 
+---
+
 ### Difficult
 
 Complete the medium task but also reject the order if there is not enough kitchen storage
@@ -131,6 +133,8 @@ console.log(currentKitchenStorage);
 
 /// currentKitchenStorage === initialKitchenStorage should be true
 ```
+
+---
 
 ### The Clicking Game
 
