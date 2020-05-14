@@ -50,13 +50,13 @@ Here are the required ingredients for Both Pizza and Pasta:
 ```js
 let recipes = {
   pizza: {
-    FlourInGrams: 200,
+    flourInGrams: 200,
     tomatoSauceInMl: 100,
     mixedHerbsInGrams: 20,
     cheeseInGrams: 100,
   },
   pasta: {
-    FlourInGrams: 100,
+    flourInGrams: 100,
     eggs: 1,
     tomatoSauceInMl: 100,
     beefInGrams: 100,
