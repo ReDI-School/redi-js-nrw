@@ -142,7 +142,7 @@ For this exercise, we will make a fun clicking game.
 
 The HTML and JS framework is ready for you in a template.
 
-Your task in to write the functions.
+Your task is to write the functions.
 
 ---
 
