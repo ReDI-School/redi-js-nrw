@@ -90,7 +90,7 @@ console.log(currentKitchenStorage);
 
 ### Medium
 
-Write a function to take on object containing multiple items in the order, the outcome I would expect is:
+Write a function to take one object containing multiple items in the order, the outcome I would expect is:
 
 ```js
 // the starting storage and recipes from previous slides
