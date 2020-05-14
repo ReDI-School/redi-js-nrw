@@ -32,7 +32,7 @@ Here are the starting figures for your kitchen storage:
 
 ```js
 let initialKitchenStorage = {
-  FlourInGrams: 10000,
+  flourInGrams: 10000,
   eggs: 48,
   tomatoSauceInMl: 2000,
   beefInGrams: 10000,
