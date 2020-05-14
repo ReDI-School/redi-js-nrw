@@ -6,10 +6,6 @@ Lesson 19, Thursday, 2020-5-14
 
 ---
 
-#### A word from Sevtap
-
----
-
 ### Solutions for previous lesson
 
 ---
