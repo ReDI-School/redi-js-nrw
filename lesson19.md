@@ -148,6 +148,10 @@ Your task in to write the functions.
 
 ### Demonstration of Working Game
 
+Don't copy the code from here, this is just to show you how the game should work
+
+https://jsbin.com/sipacorivu/1/edit?output
+
 ---
 
 ### Instructions
