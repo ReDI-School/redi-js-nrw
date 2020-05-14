@@ -17,7 +17,7 @@ Lesson 19, Thursday, 2020-5-14
 ### The Kitchen Storage Tracker
 
 Imagine you are designing an app to track the storage in your Pizza and Pasta Restaurant.
-The function you must write will accept 2 parameters;
+The function you must write will accept 2 inputs;
 
 1. the new order
 2. the current kitchen storage
