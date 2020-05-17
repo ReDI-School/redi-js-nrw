@@ -11,10 +11,10 @@
 1. [Objects](#lesson8:objects)
 1. [DOM](#lesson9:DOM)
 1. [Web APIs](#lesson14:WebAPI)
-1. Libraries
+1. [Libraries](#lesson20:Libraries)
 1. [Local storage](#lesson16)
 
-Direct link to lessons: [1](#lesson1) [2](#lesson2) [3](#lesson3) [4](#lesson4) [5](#lesson5) [6](#lesson6) [7](#lesson7) [8](#lesson8) [9](#lesson9) [10](#lesson10) [11](#lesson11) [12](#lesson12) [13](#lesson13) [14](#lesson14) [15](#lesson15) [16](#lesson16) [17](#lesson17) [18](#lesson18) [19](#lesson19)
+Direct link to lessons: [1](#lesson1) [2](#lesson2) [3](#lesson3) [4](#lesson4) [5](#lesson5) [6](#lesson6) [7](#lesson7) [8](#lesson8) [9](#lesson9) [10](#lesson10) [11](#lesson11) [12](#lesson12) [13](#lesson13) [14](#lesson14) [15](#lesson15) [16](#lesson16) [17](#lesson17) [18](#lesson18) [19](#lesson19) [20](#lesson20)
 
 ---
 
