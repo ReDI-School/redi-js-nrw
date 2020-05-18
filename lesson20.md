@@ -106,12 +106,14 @@ All our JavaScript code was in one file called `main.js`
 ```html
 <html>
   <head>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.3/moment.js"></script>
-      <script>
-        let date = moment([2020, 0, 1]); // 1. January 2020
-        console.log(date.fromNow()); // prints "5 months ago"
-      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.3/moment.js"></script>
   </head>
+  <body>
+    <script>
+      let date = moment([2020, 0, 1]); // 1. January 2020
+      console.log(date.fromNow()); // prints "5 months ago"
+    </script>
+  </body>
 </html>
 ```
 
