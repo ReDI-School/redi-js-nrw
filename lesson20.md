@@ -2,7 +2,7 @@
 
 # Basic Frontend - Spring 2020
 
-Lesson 20, Tuesday, 2020-5-19
+Lesson 20, Tuesday, 2020-05-19
 
 ---
 
@@ -218,8 +218,7 @@ map.on('click', onMapClick);
 * Call the restcountries.eu "all" API: https://restcountries.eu/rest/v2/all
 * For every country, create one `<option>` element using `document.createElement()`
 * In your `countryChanged()` function, set the view of your Leaflet map to that country's latitude and longitude
-* Try it on your own. If you get stuck, check the hints on the next slides
-* Still stuck? Ask on slack, please :)
+* Hints are on next slides.
 
 ---
 
