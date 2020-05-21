@@ -2,8 +2,8 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="https://unpkg.com/reveal.js/css/reveal.css" />
-  <link rel="stylesheet" href="https://unpkg.com/reveal.js/css/theme/white.css" />
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@3.9.2/css/reveal.css" />
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@3.9.2/css/theme/white.css" />
   <style type="text/css">
     .reveal p {
       text-align: left;
@@ -63,27 +63,27 @@
       <!-- NEW_SECTION_HERE -->
     </div>
   </div>
-  <script src="https://unpkg.com/reveal.js/js/reveal.js"></script>
+  <script src="https://unpkg.com/reveal.js@3.9.2/js/reveal.js"></script>
   <script>
     let link = document.createElement('link');
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = window.location.search.match(/print-pdf/gi) ? 'https://unpkg.com/reveal.js/css/print/pdf.css' : 'https://unpkg.com/reveal.js/css/print/paper.css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'https://unpkg.com/reveal.js@3.9.2/css/print/pdf.css' : 'https://unpkg.com/reveal.js@3.9.2/css/print/paper.css';
     document.getElementsByTagName('head')[0].appendChild(link);
 
     Reveal.initialize({
       dependencies: [
         {
-          src: 'https://unpkg.com/reveal.js/plugin/markdown/marked.js'
+          src: 'https://unpkg.com/reveal.js@3.9.2/plugin/markdown/marked.js'
         },
         {
-          src: 'https://unpkg.com/reveal.js/plugin/markdown/markdown.js'
+          src: 'https://unpkg.com/reveal.js@3.9.2/plugin/markdown/markdown.js'
         },
         {
-          src: 'https://unpkg.com/reveal.js/plugin/highlight/highlight.js',
+          src: 'https://unpkg.com/reveal.js@3.9.2/plugin/highlight/highlight.js',
           async: true
         },
-        { src: 'https://unpkg.com/reveal.js/plugin/zoom-js/zoom.js', async: true },
+        { src: 'https://unpkg.com/reveal.js@3.9.2/plugin/zoom-js/zoom.js', async: true },
       ],
       slideNumber: true,
       hash: true,
