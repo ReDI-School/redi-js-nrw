@@ -2,8 +2,10 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="https://unpkg.com/reveal.js@3.9.2/css/reveal.css" />
-  <link rel="stylesheet" href="https://unpkg.com/reveal.js@3.9.2/css/theme/white.css" />
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4/dist/reset.css" />
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4/dist/reveal.css" />
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4/dist/theme/white.css" />
+  <link rel="stylesheet" href="https://unpkg.com/highlight.js/styles/vs2015.css" id="highlight-theme" />
   <style type="text/css">
     .reveal p {
       text-align: left;
@@ -34,7 +36,6 @@
       font-size: xx-large;
     }
   </style>
-  <link rel="stylesheet" href="https://unpkg.com/highlight.js/styles/vs2015.css" />
 </head>
 
 <body>
@@ -63,31 +64,19 @@
       <!-- NEW_SECTION_HERE -->
     </div>
   </div>
-  <script src="https://unpkg.com/reveal.js@3.9.2/js/reveal.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4/dist/reveal.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4/plugin/markdown/markdown.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4/plugin/highlight/highlight.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4/plugin/zoom/zoom.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4/plugin/search/search.js"></script>
   <script>
-    let link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.type = 'text/css';
-    link.href = window.location.search.match(/print-pdf/gi) ? 'https://unpkg.com/reveal.js@3.9.2/css/print/pdf.css' : 'https://unpkg.com/reveal.js@3.9.2/css/print/paper.css';
-    document.getElementsByTagName('head')[0].appendChild(link);
-
     Reveal.initialize({
-      dependencies: [
-        {
-          src: 'https://unpkg.com/reveal.js@3.9.2/plugin/markdown/marked.js'
-        },
-        {
-          src: 'https://unpkg.com/reveal.js@3.9.2/plugin/markdown/markdown.js'
-        },
-        {
-          src: 'https://unpkg.com/reveal.js@3.9.2/plugin/highlight/highlight.js',
-          async: true
-        },
-        { src: 'https://unpkg.com/reveal.js@3.9.2/plugin/zoom-js/zoom.js', async: true },
-      ],
       slideNumber: true,
       hash: true,
-      controlsTutorial: false
+      controlsTutorial: false,
+      plugins: [
+        RevealMarkdown, RevealHighlight, RevealZoom, RevealSearch
+      ]
     });
 
   </script>
