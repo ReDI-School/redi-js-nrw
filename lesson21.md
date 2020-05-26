@@ -89,7 +89,7 @@ console.log(b);
 
 ---
 
-### Pass-by-reference
+### Copy-by-reference
 
 * Complex types (Array, Object, Function, ...) are passed by reference:
 
