@@ -73,7 +73,7 @@ marker.addTo(map);
 
 ---
 
-### Recap Pass-by-value
+### Recap Copy-by-value
 
 * What's the value of `b`?
 
