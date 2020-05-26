@@ -84,7 +84,7 @@ a = 43;
 console.log(b);
 ```
 
-* b is still 42. Primitive values are passed by value!
+* b is still 42. Primitive values are copied by value!
 <!-- .element: class="fragment" -->
 
 ---
