@@ -91,7 +91,7 @@ console.log(b);
 
 ### Copy-by-reference
 
-* Complex types (Array, Object, Function, ...) are passed by reference:
+* Complex types (Array, Object, Function, ...) are copied by reference:
 
 ```js
 let person1 = { name: "John" };
