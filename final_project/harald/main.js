@@ -1,8 +1,3 @@
-/*
-
-
-*/
-
 let plantsElement = document.getElementById("plants");
 
 let plants = [
@@ -88,6 +83,7 @@ async function searchPlant() {
     let link = reply[0].link;
     let linkResponse = await fetch(link + "?token=" + token);
     let linkReply = await linkResponse.json();
+    searchResultsElement.textContent += "\n\n" + JSON.stringify(linkReply, null, 4);
     searchResultsElement.textContent += JSON.stringify(linkReply, null, 4);
   }
 }
