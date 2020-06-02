@@ -30,10 +30,10 @@ let plants = [
    {
        name: "Carlos",
        type: "Avocado",
-       fertilizingPeriod: 1000*60*60*24*30,
-       wateringPeriod: 1000*60*60*24*5,
-       lastWatering: 0,
-       lastFertilizing: 0
+       fertilizingPeriod: moment.duration(30, "days").valueOf(),
+       wateringPeriod: moment.duration(5, "days").valueOf(),
+       lastWatering: moment("2020-05-27 21:30:26").valueOf(),
+       lastFertilizing: moment("2020-05-21 21:30:26").valueOf()
    }
 ];
 ```
@@ -52,7 +52,7 @@ let plants = [
    * Refer to an external picture database
    * or: Use an API to get a picture for the given species
    * or: Compress and store in localStorage as text
-   
+
 * Research https://trefle.io/
 * Research https://web.plant.id/plant-identification-api/
 
@@ -75,8 +75,8 @@ let plants = [
        name: "Carlos",
        type: "Avocado",
        // note - periods in JavaScript are in milliseconds
-       fertilizingPeriod: 1000*60*60*24*30,  // every 30 days
-       wateringPeriod: 1000*60*60*24*5,      // every 5 days
+       fertilizingPeriod: moment.duration(30, "days").valueOf(),  // every 30 days
+       wateringPeriod: moment.duration(5, "days").valueOf(),      // every 5 days
        lastWatering: moment("2020-05-27 21:30:26").valueOf(),
        lastFertilizing: moment("2020-05-21 21:30:26").valueOf()
    }
@@ -84,14 +84,14 @@ let plants = [
 
 for (let plant of plants) {
     let plantElement = document.createElement("div");
-  
+
     let nextWaterDate = plant.lastWatering + plant.wateringPeriod;
     let timeToNextWater = moment(nextWaterDate).fromNow();
 
     let nextFertilizingDate = plant.lastFertilizing + plant.fertilizingPeriod;
     let timeToNextFertilizing = moment(nextFertilizingDate).fromNow();
-  
-    plantElement.innerText = 
+
+    plantElement.innerText =
       plant.type +
       ", " +
       plant.name +
@@ -130,10 +130,10 @@ function fileUploaded(element) {
   let file = element.files[0];
   let reader = new FileReader();
   reader.readAsDataURL(file);
-  
+
   reader.onloadend = function() {
     identifyPlant(reader.result);
-  }  
+  }
 }
 
 async function searchPlant() {
@@ -153,6 +153,23 @@ async function searchPlant() {
     let link = reply[0].link;
     let linkResponse = await fetch(link + "?token=" + token);
     let linkReply = await linkResponse.json();
-    searchResultsElement.textContent += JSON.stringify(linkReply, null, 4);      
+    searchResultsElement.textContent += JSON.stringify(linkReply, null, 4);
+  }
+}
+
+// A simple function to show a notification
+async function testNotification() {
+  // we first have to ask the user for permission to send notifications
+  if (Notification.permission === "default") {
+    // requestPermission is async. We need to wait for the user to confirm
+    await Notification.requestPermission();
+  }
+
+  // console.log("Notification.permission: " + Notification.permission);
+
+  // check again whether we're granted notifications, because
+  // Notification.permission might have changed during the async call
+  if (Notification.permission === "granted") {
+    let notification = new Notification("Testing, testing, 123...");
   }
 }

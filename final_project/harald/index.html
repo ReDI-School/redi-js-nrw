@@ -8,16 +8,22 @@
 </head>
 <body>
   <div id="plants"></div>
-  
+
   <div>
-    <input type="file" onchange="fileUploaded(this)" />
+    Upload a plant image to identify it:
+    <input type="file" accept="image/*" onchange="fileUploaded(this)" />
     <pre id="idResults"></pre>
   </div>
 
   <div>
+    Enter a plant name to get more info:
     <input id="plantName" type="text" placeholder="Plant name" >
     <button onclick="searchPlant()">Search</button>
     <pre id="searchResults"></pre>
+  </div>
+
+  <div>
+    <button onclick="testNotification()">Test Notification</button>
   </div>
 
   <script src="main.js"></script>
