@@ -273,7 +273,7 @@ for (let i = 0; i < todoItems.length; i++) {
 <body>
     <ul>
         <li>Wash dishes</li>
-    <ul>
+    </ul>
 </body>
 ```
 
