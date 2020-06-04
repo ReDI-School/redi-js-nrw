@@ -10,9 +10,19 @@
   <div id="plants"></div>
 
   <div>
-    Upload a plant image to identify it:
+    Upload a plant image to identify it with plant.id:
     <input type="file" accept="image/*" onchange="fileUploaded(this)" />
     <pre id="idResults"></pre>
+  </div>
+
+  <div>
+    Upload a plant image to identify it with plantnet.org:
+    <select id="planetNetSelect">
+      <option>leaf</option>
+      <option>flower</option>
+    </select>
+    <input type="file" accept="image/*" onchange="plantNetUploaded(this)" />
+    <pre id="plantNetResults"></pre>
   </div>
 
   <div>

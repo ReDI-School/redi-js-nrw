@@ -88,6 +88,30 @@ async function searchPlant() {
   }
 }
 
+async function plantNetUploaded(element) {
+  let apiKey = "XXX";
+
+  // required because my-api.planetnet.org does not set CORS headers
+  let corsProxy = "https://cors-anywhere.herokuapp.com/";
+
+  let organs = document.getElementById("planetNetSelect").value;
+
+  // plantnet API expects FormData (multipart/form-data)
+  let form = new FormData();
+  form.append('organs', organs);
+  form.append('images', element.files[0]);
+
+  let reply = await fetch(corsProxy + 'https://my-api.plantnet.org/v2/identify/all?api-key=' + apiKey,
+  {
+    body: form,
+    method: 'POST'
+  });
+  let response = await reply.json();
+
+  let resultElement = document.getElementById("plantNetResults");
+  resultElement.textContent = JSON.stringify(response, null, 4);
+}
+
 // A simple function to show a notification
 async function testNotification() {
   // we first have to ask the user for permission to send notifications
