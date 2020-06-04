@@ -94,7 +94,7 @@ async function plantNetUploaded(element) {
   // required because my-api.planetnet.org does not set CORS headers
   let corsProxy = "https://cors-anywhere.herokuapp.com/";
 
-  let organs = document.getElementById("planetNetSelect").value;
+  let organs = document.getElementById("plantNetSelect").value;
 
   // plantnet API expects FormData (multipart/form-data)
   let form = new FormData();
