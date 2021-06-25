@@ -1,4 +1,4 @@
-# Fall 2019 ReDI Berlin JavaScript course
+# ReDI School NRW Autumn 2021 JavaScript course
 
 ## Students
 
