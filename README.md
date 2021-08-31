@@ -2,7 +2,7 @@
 
 ## Students
 
-Check out the [Slides](https://github.com/ReDI-School/nrw-js/blob/master/#/)
+Check out the [Slides](https://redi-school.github.io/js-berlin-2020-spring/#/)
 
 ### Slides as PDF
 
