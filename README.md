@@ -2,7 +2,7 @@
 
 ## Students
 
-Check out the [Slides](https://github.com/ReDI-School/nrw-js/index.html/)
+Check out the [Slides](https://github.com/ReDI-School/nrw-js/lesson1.md/)
 
 ### Slides as PDF
 
