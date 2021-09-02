@@ -19,9 +19,9 @@
 
 <!-- .slide: id="lessonXX" -->
 
-# Basic Frontend - Spring 2020
+# Basic Frontend - Fall 2021
 
-Lesson XX, Tuesday, 2020-DD-MM
+Lesson XX, Tuesday, 2021-DD-MM
 
 ---
 
