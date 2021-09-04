@@ -1,8 +1,8 @@
 <!-- .slide: id="lesson4" -->
 
-# Basic Frontend - Spring 2020
+# Basic Frontend - Fall 2021
 
-Lesson 4, Thursday, 2020-03-05
+Lesson 4, Thursday, 2021-09-23
 
 ---
 

@@ -20,9 +20,10 @@ Direct link to lessons: [1](#lesson1) [2](#lesson2) [3](#lesson3) [4](#lesson4) 
 
 <!-- .slide: id="lesson1" -->
 
-# Basic Frontend - Spring 2020
+# Basic Frontend - Fall 2021
 
-Lesson 1, Tuesday, 2020-02-25
+Lesson 1, Tuesday, 2021-09-14
+
 
 ---
 
