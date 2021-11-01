@@ -1,0 +1,14 @@
+// DOM EXERCISE
+// 1. Create the usual empty HTML and JavaScript file
+// 2. Remember to load your JavaScript file in the body using a <script src=""></script> tag
+// 3. Add one <ul id="todoList"></ul> to your HTML page
+// 4. In your JavaScript file, add an array of things you need to do, for example: let todoItems = [ "wash dishes", "learn JavaScript", "do sport" ];
+// 5. Add all the todoItems from your JavaScript Array to your <ul> using the DOM API
+
+// here the js pa
+// 4. In your JavaScript file, add an array of things you need to do, for example: let todoItems = [ "wash dishes", "learn JavaScript", "do sport" ];
+let todoItems = ["wash dishes", "learn JavaScript", "do sport"];
+
+// 5. Add all the todoItems from your JavaScript Array to your <ul> using the DOM API
+
+// TODO: -.-
