@@ -1,9 +1,9 @@
 #App {
+  color:black;
   width: 100px;
-  height: 100px;
+  height:100px;
   position: relative;
 }
-
 .card {
   position: absolute;
   top: 0;
@@ -12,10 +12,10 @@
   height: 100%;
 }
 
-.layer{
+.first{
   background-color: orange;
 }
 
-.cover{
+.second{
   background-color: red;
 }

@@ -1,3 +1,39 @@
-#App {
-  color: red;
+.container {
+  position: relative;
+  font-size: 3rem;
+  height: 150px;
+  width: 150px;
+  margin-top: 15px;
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.topCard {
+  border:1px solid red;
+  background-color: orange;
+}
+
+.bottomCard {
+  color: blue;
+  font-size: 3rem;
+  background-color: red;
+  border:1px solid black;
+}
+
+.secondcontainer{
+  border: 1px solid red;
+  width: 500px;
+  margin: 50px;
+  height:100px;
 }
