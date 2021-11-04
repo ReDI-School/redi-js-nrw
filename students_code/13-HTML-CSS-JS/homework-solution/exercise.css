@@ -1,0 +1,29 @@
+.container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.fillParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.layer {
+  outline: 2px solid black;
+}
+
+.cover {
+  background-color: #FFAB40;
+}
+
+.movedCover {
+  transform: translateX(100px);
+}
