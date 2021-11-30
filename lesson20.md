@@ -215,7 +215,7 @@ map.on('click', onMapClick);
 ### Homework
 
 * Create a `<select id="countries" onchange="countryChanged()"></select>` element in your HTML page
-* Call the restcountries.eu "all" API: https://restcountries.eu/rest/v2/all
+* Call the restcountries.eu "all" API: https://restcountries.com/v3.1/all
 * For every country, create one `<option>` element using `document.createElement()`
 * In your `countryChanged()` function, set the view of your Leaflet map to that country's latitude and longitude
 * Hints are on next slides.
@@ -228,7 +228,7 @@ First, we need to fetch all countries. Remember the `fetch` API?
 
 ```js
 async function fetchCountries() {
-    let response = await fetch("https://restcountries.eu/rest/v2/all");
+    let response = await fetch("https://restcountries.com/v3.1/all");
     let countries = await response.json();
 
     // now populate the <select> element! (see next slide for hint)
