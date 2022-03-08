@@ -1,6 +1,6 @@
 # Project
 Project examples from [Frontendmentor](https://dev.to/frontendmentor/16-front-end-projects-with-designs-to-help-improve-your-coding-skills-5ajl)
-## Manage landing page
+## 1 Manage landing page
 https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5 </br>
 This landing page will give your CSS skills a nice test. There are some background patterns that need to be positioned accurately and some little details in the switch from desktop to mobile. There are also a few areas that will require some JS.
 ### Brief
@@ -14,7 +14,7 @@ Your users should be able to:
 ### Learning Outcomes
 Your major takeaways from this challenge will be related to CSS and layout. If you haven't done so by now, you might want to try out a pre-processor, like Sass, to help keep your code maintainable.
 
-## Job listings with filtering
+## 2 Job listings with filtering
 https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt </br>
 Now that you've got a bit more comfortable with JavaScript, let's practice some filtering. In this challenge, you'll need to filter the job listings by the categories selected. There are two options to choose from for how to approach it:
 - *Option 1:* Filter job listings based on the categories using the HTML data- attribute. In this option, you'd use the hardcoded content that already exists in the index.html file.
