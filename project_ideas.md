@@ -1,8 +1,23 @@
-# Plant App
+# Project
+## Manage landing page
+https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5
+This landing page will give your CSS skills a nice test. There are some background patterns that need to be positioned accurately and some little details in the switch from desktop to mobile. There are also a few areas that will require some JS.
+### Brief
+Your users should be able to:
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- See all testimonials in a horizontal slider
+- Receive an error message when the newsletter sign-up form is submitted if:
+-- The input field is empty
+-- The email address is not formatted correctly
+### Learning Outcomes
+Your major takeaways from this challenge will be related to CSS and layout. If you haven't done so by now, you might want to try out a pre-processor, like Sass, to help keep your code maintainable.
 
+
+# Other project ideas:
+
+## Plant App
 See [final_project/README.md](final_project/README.md)
-
-# Project ideas:
 
 ## Find non-smoking bars
 
