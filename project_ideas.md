@@ -14,9 +14,21 @@ Your users should be able to:
 ### Learning Outcomes
 Your major takeaways from this challenge will be related to CSS and layout. If you haven't done so by now, you might want to try out a pre-processor, like Sass, to help keep your code maintainable.
 
+## Job listings with filtering
+https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt </br>
+Now that you've got a bit more comfortable with JavaScript, let's practice some filtering. In this challenge, you'll need to filter the job listings by the categories selected. There are two options to choose from for how to approach it:
+- *Option 1:* Filter job listings based on the categories using the HTML data- attribute. In this option, you'd use the hardcoded content that already exists in the index.html file.
+- *Option 2:* Use the local data.json file to pull the data and then dynamically add the content. This would be perfect if you're looking to practice a JS library/framework like React, Vue, or Svelte.
+### Brief
+Your users should be able to:
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Filter job listings based on the categories selected
+### Learning Outcomes
+You'll learn how to use JavaScript to filter items in the DOM. This is a key skill when building client-side applications, so this challenge will be great practice!
 
 
-# Other project ideas:
+# Other project ideas
 
 ## Plant App
 See [final_project/README.md](final_project/README.md)
