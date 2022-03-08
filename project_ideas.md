@@ -31,7 +31,6 @@ You'll learn how to use JavaScript to filter items in the DOM. This is a key ski
 # Other project ideas
 
 ## Plant App
-See [final_project/README.md](final_project/README.md)
 
 ## Find non-smoking bars
 
