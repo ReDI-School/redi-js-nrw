@@ -1,6 +1,7 @@
 # Project
+Project examples from [Frontendmentor](https://dev.to/frontendmentor/16-front-end-projects-with-designs-to-help-improve-your-coding-skills-5ajl)
 ## Manage landing page
-https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5
+https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5 </br>
 This landing page will give your CSS skills a nice test. There are some background patterns that need to be positioned accurately and some little details in the switch from desktop to mobile. There are also a few areas that will require some JS.
 ### Brief
 Your users should be able to:
@@ -12,6 +13,7 @@ Your users should be able to:
 -- The email address is not formatted correctly
 ### Learning Outcomes
 Your major takeaways from this challenge will be related to CSS and layout. If you haven't done so by now, you might want to try out a pre-processor, like Sass, to help keep your code maintainable.
+
 
 
 # Other project ideas:
