@@ -1,4 +1,4 @@
-# ReDI School NRW Autumn 2021 JavaScript course
+# ReDI School NRW Spring 2022 JavaScript course
 
 ## Students
 
