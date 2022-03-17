@@ -1,8 +1,8 @@
 <!-- .slide: id="lesson2" -->
 
-# Basic Frontend - Fall 2021
+# Basic Frontend - Spring 2022
 
-Lesson 2, Thursday, 2021-09-16
+Lesson 2, Thursday, 2021-03-17
 
 (Please install Visual Studio Code if you haven't already)
 
