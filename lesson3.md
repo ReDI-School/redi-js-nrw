@@ -297,7 +297,7 @@ myAge++; // same as myAge = myAge + 1
 
 ---
 
-### Recap: What is programming?
+### What is programming?
 
 <!-- .slide: style="font-size:70%" -->
 
