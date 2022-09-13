@@ -465,7 +465,7 @@ let myHeight = 160;
 let player1Age = 35;
 let player1Height = 174;
 let myScore = myHeight + (5 * myAge);
-let player1Score = player1Age + (5 * player1Height);
+let player1Score = player1Height + (5 * player1Age);
 if (myScore > player1Score) {
     console.log("I win!");
 }
