@@ -1,5 +1,6 @@
 # ReDI School NRW Fall 2022 JavaScript course
 
+
 ## Students
 
 Check out the [Slides](https://redi-school.github.io/js-nrw-2021-fall/#/)
