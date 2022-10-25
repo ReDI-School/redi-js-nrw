@@ -2,7 +2,7 @@
 
 # Basic Frontend - Fall 2021
 
-Lesson 11, Tuesday, 2021-10-26
+Lesson 11
 
 ---
 
