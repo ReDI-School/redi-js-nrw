@@ -1,8 +1,8 @@
 <!-- .slide: id="lesson6" -->
 
-# Basic Frontend - Spring 2022
+# Basic Frontend - Spring 2023
 
-Lesson 6, Tuesday, 2022-04-05
+Lesson 6
 
 ---
 

@@ -2,27 +2,26 @@
 
 <!-- .slide: style="font-size:80%" -->
 
-1. [Introduction](#lesson1): [Basic Data Types](#lesson1:datatypes) and [Operators](#lesson1:operators)
-1. [Variables](#lesson2): [Console](#lesson2:console), [Comments](#lesson2:comments) and [Homework](#lesson2:homework)
-1. [If statements](#lesson3)
-1. [Functions](#lesson4), Homework [1](#lesson4:homework1) and [2](#lesson4:homework2)
-1. [Loops](#lesson6:loops)
-1. [Arrays](#lesson7:arrays)
-1. [Objects](#lesson8:objects)
-1. [DOM](#lesson9:DOM)
-1. [Web APIs](#lesson14:WebAPI)
-1. [Libraries](#lesson20:Libraries)
-1. [Local storage](#lesson16)
+1. [Introduction](#lesson01): incl. Basic Data Types & Operators
+1. [Variables](#lesson02): incl. Console & Comments
+1. [If statement](#lesson03): incl. Loops & Arrays
+1. [Functions](#lesson04)
+1. [Objects](#lesson05)
+1. [DOM](#lesson06): incl. Local Storage
+1. [Callbacks](#lesson07)
+1. [Web APIs](#lesson08)
+1. [OOP](#lesson09)
+1. [Libraries](#lesson10)
 
-Direct link to lessons: [1](#lesson1) [2](#lesson2) [3](#lesson3) [4](#lesson4) [5](#lesson5) [6](#lesson6) [7](#lesson7) [8](#lesson8) [9](#lesson9) [10](#lesson10) [11](#lesson11) [12](#lesson12) [13](#lesson13) [14](#lesson14) [15](#lesson15) [16](#lesson16) [17](#lesson17) [18](#lesson18) [19](#lesson19) [20](#lesson20) [21](#lesson21)
+Direct link to lessons: [1](#lesson01) [2](#lesson02) [3](#lesson03) [4](#lesson04) [5](#lesson05) [6](#lesson06) [7](#lesson07) [8](#lesson08) [9](#lesson09) [10](#lesson10)
 
 ---
 
 <!-- .slide: id="lesson1" -->
 
-# Basic Frontend - Spring 2022
+# Basic Frontend - Spring 2023
 
-Lesson 1, Tuesday, 2022-03-15
+Lesson 1
 
 
 ---

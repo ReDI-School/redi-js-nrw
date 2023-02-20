@@ -1,8 +1,8 @@
 <!-- .slide: id="lesson21" -->
 
-# Basic Frontend - Fall 2021
+# Basic Frontend - Spring 2023
 
-Lesson 21, Tuesday, 2021-12-07
+Lesson 21
 
 ---
 
