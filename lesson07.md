@@ -1,12 +1,12 @@
 <!-- .slide: id="lesson7" -->
 
-# Basic Frontend - Spring 2023
+# Basic Frontend
 
-Lesson 7
+Lesson 7: Callbacks
 
 ---
 
-### Refresher: Types
+### Recap: Types
 
 ```js
 // Strings
@@ -21,214 +21,439 @@ let isProgrammer = true;
 
 ---
 
-<!-- .slide: id="lesson7:arrays" -->
-
-### Arrays
-
-Array is a container type that holds multiple values:
+### Recap - Datatypes
 
 ```js
-let cars = ["Saab", "Volvo", "BMW"];
-
-// we create an array using []
-let emptyArray = [];
-
-// we put the values we want in square brackets
-// separated by commas
-let ages = [19, 33, 25, 40];
+let a1 = 42;
+let a2 = true;
+let a3 = "hello";
+let a4 = function() {};
+let a5;
+let a6 = [];
+let a7 = {};
 ```
 
 ---
 
-Array can hold any type of value:
+### Solution - Datatypes
 
 ```js
-let prices = [0.99, 1.49];
-```
-
-And any quantity:
-```js
-// I only have one favorite food
-let favoriteFoods = ["Pizza"];
-// An array holding 26 letters of the alphabet
-let alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l"]; //TODO
+let a1 = 42;       // number
+let a2 = true;     // boolean
+let a3 = "hello";  // string
+let a4 = function() {};  // function
+let a5;            // undefined
+let a6 = [];       // object (array)
+let a7 = {};       // object
 ```
 
 ---
 
-### Analogy: Bookshelf
+### Null
 
-A bookshelf represents an array of books
+* There's one datatype that we haven't learned about yet: `null`
+* `null` is like `undefined`. It indicates the absence of a value.
+* `null` can be used to indicate an *intentional* abscence of an object value.
+* Example: `document.getElementById("NoExist");` returns `null`
 
-![bookshelf](images/bookshelf.jpg)
+---
+
+## A glimpse of JavaScript + HTML
+
+---
+
+### My first interactive Webpage!
+
+* Create a new folder
+* Create a html file `index.html`:
+
+```html
+<html>
+<body>
+   <script src="main.js"></script>
+</body>
+</html>
+```
+
+* Create a JS file `main.js`:
 
 ```js
-let books = ["Harry Potter", "The Hobbit", "Game of Thrones"];
+console.log("Hello from JavaScript");
 ```
 
 ---
 
-### Accessing elements
+### onclick
 
-We can access elements in the array by number using square brackets "`[]`"
+* HTML elements have an [`onclick`](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick) attribute that executes JavaScript code, e.g.:
 
-The numbering starts at `0` (think floors of a building):
-
-```js
-let books = ["Harry Potter", "The Hobbit", "Game of Thrones"];
-
-console.log(books[0]); // "Harry Potter"
-console.log(books[1]); // "The Hobbit"
-// QUIZ - how do we access "Game of Thrones" ?
-```
-
-```js
-console.log(books[2]); // "Game of Thrones"
-```
-<!-- .element: class="fragment" -->
-The order of elements in the array matter!
-<!-- .element: class="fragment" -->
-
-
----
-
-### Bookshelf array
-
-![bookshelf](images/array_bookshelf_0.png)
-
----
-
-### Invalid elements
-
-```js
-let books = ["Harry Potter", "The Hobbit", "Game of Thrones"];
-
-console.log(books[0]); // "Harry Potter"
-console.log(books[1]); // "The Hobbit"
-console.log(books[2]); // "Game of Thrones"
-console.log(books[3]); // ???
-```
-
-```js
-console.log(books[3]); // undefined
-```
-<!-- .element: class="fragment" -->
-
----
-
-### Quiz
-
-```js
-let friends = ["Alice", "Bob", "Carol"];
-
-console.log(friends[1]); // ???
-console.log(friends[3]); // ???
-```
-
-```js
-console.log(friends[1]); // "Bob"
-console.log(friends[3]); // undefined
-```
-<!-- .element: class="fragment" -->
-
----
-
-### Exercise 1
-
-* Step 1: Create an array with your 3 top friends (or foes)
-* Step 2: Say "hello" on console to each friend, e.g.:
-
-```
-hello Alice
-hello Bob
-hello Carol
+```html
+<button onclick="let x = 1; x++; console.log(x);">
+Click me!
+</button>
 ```
 
 ---
 
-### Modifying arrays
+### onclick
 
-We can change any value using brackets:
-
-```js
-let friends = ["Alice", "Bob", "Carol"];
-
-friends[1] = "David";
-
-console.log(friends[1]); // "David"
-```
+* Writing source code in HTML is not so great.
+* What did we learn so far so we can write code in JavaScript, but only execute it when a button is clicked?
+* Functions! <!-- .element: class="fragment" -->
 
 ---
 
-### Common operations: array length
+### onclick
 
-We can get the length of an array with the `.length` property:
+Let's add a new function to our JavaScript file:
 
 ```js
-let friends = ["Alice", "Bob", "Carol"];
-console.log(friends.length); // 3
+function onButtonClick() {
+    console.log("Button has been clicked!");
+}
 ```
+
+So how can we call our function every time our button gets clicked?
 
 ---
 
-### Iterating through an array
+### onclick
 
-We can use loops to go through elements of an array.
+JavaScript:
 
 ```js
-let cars = ["Saab", "Volvo", "BMW"];
+function onButtonClick() {
+    console.log("Button has been clicked!");
+}
+```
 
-for (let i = 0; i < cars.length; i++) {
-    let currentCar = cars[i];
-    console.log(currentCar);
+HTML:
+
+```html
+<button onclick="onButtonClick()">
+```
+
+Try it - click your button, does it output something?
+
+---
+
+### onclick
+
+Let's do something with our HTML page when the button is clicked:
+
+```js
+function onButtonClick() {
+   document.body.style.backgroundColor = 'red';
+}
+```
+
+* What happens when you click your button?
+* What is `document.body.style.backgroundColor`?
+* Answer: It's a variable defined by the browser that contains the current background color. <!-- .element: class="fragment" -->
+
+---
+
+###  Exercise
+
+Can you make this in HTML and CSS? Don't worry about making it move, just make sure the elements are on top of one another (click on the cover!).
+<div style="position: relative;width: 150px;height: 100px">
+  <div style="display: flex;justify-content: center;align-items: center;text-align: center;position: absolute;top: 0px;left: 0px;width: 100%;height: 100%; outline: 1px solid black">My Layer</div>
+  <div style="display: flex;justify-content: center;align-items: center;text-align: center;position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;background-color:#FFAB40; cursor: pointer" onclick="const str = this.style.left == '100%' ? '0px' : '100%'; this.style.left = str;">My Cover</div>
+
+</div>
+
+---
+
+### solution
+
+```html
+<div class="card">
+  <div class="fillParent layer">My Layer</div>
+  <div class="fillParent cover">My Cover</div>
+</div>
+```
+
+```css
+.card {
+  position: relative;
+  width: 150px;
+  height: 100px;
+}
+
+.fillParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.layer {
+  outline: 1px solid black;
+}
+
+.cover {
+  background-color: #FFAB40;
+}
+```
+<!-- .slide: style="font-size:68%" -->
+
+---
+
+### solution 2
+if you want to center the text in the boxes, use this:
+
+```css
+.fillParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 ```
 
 ---
 
-### Exercise 2
 
-* Step 1: Create an array with your 3 top friends (you can use the same from exercise 1)
-* Step 2: Say "hello" on console to each friend, using a `for` loop!
+### Css Classes with JavaScript
 
-```
-hello Alice
-hello Bob
-hello Carol
-```
-
----
-
-### Appending new values
-
-We can append new values to an array using `.push()`:
+Just like we can set the text with JavaScript, we can also change the css classes:
 
 ```js
-let friends = ["Alice", "Bob", "Carol"];
-console.log(friends.length); // 3
+let myDiv = document.createElement('div');
+// <div></div>
 
-friends.push("David");
+myDiv.classList.add('firstClass');
+// <div class='firstClass'></div>
 
-console.log(friends.length); // 4
-console.log(friends[3]); // David
+myDiv.classList.add('secondClass');
+// <div class='firstClass secondClass'></div>
+
+myDiv.classList.remove('firstClass');
+// <div class='secondClass'></div>
 ```
 
 ---
 
-### Exercise 3
+### Exercise
 
-Create an array containing a few numbers, ex `[3, 2, 9, 5, 6]`
+Can you create this with JavaScript?
+create a function called *`createLayerDiv`* that returns the following element:
 
-* Output the last element of your array
-* Output the sum of all the numbers in the array
-* Output the largest number of the array
-* Output the average (mean) of all numbers (sum of all numbers divided by amount of numbers)
+```html
+<div class="fillParent layer">My Layer</div>
+```
 
 ---
 
-### Bonus Exercise
+### Solution
 
-* Create a new array containing only numbers of the original array that are smaller than 5
- * ex: given input `[1, 3, 7, 2, 9, 5]`, return `[1, 3, 2]`
-* Write a function that takes a number and an array of numbers as input parameter. Return the index of the number if it is in the array, otherwise return `-1`
- * ex: given inputs `5` and `[2, 1, 5, 6, 3]`, return `2`
+```js
+function createLayerDiv(){
+  let layer = document.createElement('div');
+  layer.classList.add('fillParent');
+  layer.classList.add('layer');
+  layer.textContent = 'My Layer';
+  return layer;
+}
+```
+
+---
+
+### Exercise
+
+Can you create this with JavaScript?
+create a function called *`createCoverDiv`* that returns the following element:
+
+```html
+<div class="fillParent cover">My Cover</div>
+```
+
+---
+
+### Solution
+
+```js
+function createCoverDiv(){
+  let cover = document.createElement('div');
+  cover.classList.add('fillParent');
+  cover.classList.add('cover');
+  cover.textContent = 'My Cover';
+  return cover;
+}
+```
+
+---
+
+### Exercise
+
+create this card in JavaScript, use the functions you created before!
+
+```html
+<div class="card">
+  <div class="fillParent layer">My Layer</div>
+  <div class="fillParent cover">My Cover</div>
+</div>
+```
+
+---
+
+
+### Solution
+
+```js
+function createCardDiv() {
+  let card = document.createElement('div');
+  card.classList.add('card');
+
+  let layer = createLayerDiv();
+  card.appendChild(layer);
+
+  let cover = createCoverDiv();
+  card.appendChild(cover);
+  return card;
+}
+```
+
+---
+
+
+### Exercise
+
+Finally! add the following HTML to your page and use the function created before to add a card to this element:
+
+```html
+<div id="wordList"><div>
+```
+
+---
+
+### solution
+
+```js
+let list = document.getElementById('wordList');
+let card = createCardDiv();
+list.appendChild(card);
+```
+
+You should get something like this:
+<div style="position: relative;width: 150px;height: 100px">
+  <div style="display: flex;justify-content: center;align-items: center;text-align: center;position: absolute;top: 0px;left: 0px;width: 100%;height: 100%; outline: 1px solid black">My Layer</div>
+  <div style="display: flex;justify-content: center;align-items: center;text-align: center;position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;background-color:#FFAB40; cursor: pointer" onclick="const str = this.style.left == '100%' ? '0px' : '100%'; this.style.left = str;">My Cover</div>
+
+</div>
+
+---
+
+### Exercise
+
+When we click on the cover, we want it to move to the right, you can use the `left` property to do that:
+```js
+// this will move the cover to the right
+//until it reaches the edge of the card
+cover.style.left = '100%';
+```
+
+---
+
+### solution
+
+```js
+cover.onclick = function() {
+  cover.style.left = '100%';
+}
+```
+
+---
+
+### Exercise
+
+We want the cover to go back to its original position when we click on it again.
+
+
+---
+
+### solution
+
+```js
+cover.onclick = function() {
+  if (cover.style.left === '100%'){
+    cover.style.left = '0';
+  } else {
+    cover.style.left = '100%';
+  }
+}
+```
+
+---
+
+### Homework - Part 1
+
+Make the divs customizable, we should be able to call the function like this:
+
+```js
+let options = {
+  layerText: 'new Layer Text',
+  coverText: 'new Cover Text',
+  coverBackgroundColor: '#FFAB40'
+};
+let card = createCardDiv(options);
+```
+This should change the text in the layer and the cover, as well as the background color of the cover.
+
+---
+
+### Homework - Part 2
+
+Copy this data to your JavaScript file:
+```js
+let words = [{
+  word: 'Little',
+  description: 'Small in size.',
+  color: '#FF4081'
+}, {
+  word: 'Simple',
+  description: 'Easily understood or done.',
+  color: '#FF5252'
+}, {
+  word: 'Malicious',
+  description: 'Intending to do harm.',
+  color: '#FF6E40'
+}, {
+  word: 'Necessary',
+  description: 'Needed to be done.',
+  color: '#FFAB40'
+}, {
+  word: 'Standard',
+  description: 'Regularly and widely used.',
+  color: '#FFD740'
+}];
+```
+
+---
+
+### Homework - Part 3
+
+Can you use the data you just copied to make a card for each word?
+
+---
+
+### Homework - Part 4
+
+<!-- .slide: style="font-size:70%" -->
+
+Let's make a color changing webpage.
+
+* Add three buttons to your HTML
+* Set their text to "red", "green" and "blue"
+* When a button is clicked, set the background to that color
+  * Example: "green" button sets the `backgroundColor` to "green".
+* BONUS: When the button is clicked a second time, set the color to its light version.
+  * Example: Blue is clicked and the background is blue, set `backgroundColor` to "lightBlue".
+* BONUS2: Add a new button with text "dark" that changes the current color to its dark variant.
+  * Example: The page is currently `red` or `lightRed`, change it to `darkRed`

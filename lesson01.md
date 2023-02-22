@@ -2,27 +2,30 @@
 
 <!-- .slide: style="font-size:80%" -->
 
-1. [Introduction](#lesson01): incl. Basic Data Types & Operators
-1. [Variables](#lesson02): incl. Console & Comments
-1. [If statement](#lesson03): incl. Loops & Arrays
+1. [Introduction, Basic Data Types, Operators](#lesson01)
+1. [Variables, Console, Comments](#lesson02)
+1. [If statement, Loops, Arrays](#lesson03)
 1. [Functions](#lesson04)
-1. [Objects](#lesson05)
-1. [DOM](#lesson06): incl. Local Storage
+1. [Objects & More](#lesson05)
+1. [DOM](#lesson06)
 1. [Callbacks](#lesson07)
 1. [Web APIs](#lesson08)
 1. [OOP](#lesson09)
-1. [Libraries](#lesson10)
+1. [Libraries, LocalStorage](#lesson10)
 
-Direct link to lessons: [1](#lesson01) [2](#lesson02) [3](#lesson03) [4](#lesson04) [5](#lesson05) [6](#lesson06) [7](#lesson07) [8](#lesson08) [9](#lesson09) [10](#lesson10)
+Direct link to lessons: [1](#lesson01), [2](#lesson02), [3](#lesson03), [4](#lesson04), [5](#lesson05), [6](#lesson06), [7](#lesson07), [8](#lesson08), [9](#lesson09), [10](#lesson10)
 
 ---
 
 <!-- .slide: id="lesson1" -->
 
-# Basic Frontend - Spring 2023
+# Basic Frontend
 
-Lesson 1
+Lesson 1: Introduction, Basic Data Types, Operators
 
+---
+
+# Lets introduce ourselves!
 
 ---
 
@@ -96,7 +99,7 @@ We'll be using these tools during our course:
 ### Tools: Visual Studio Code
 
 * https://code.visualstudio.com/
-* Open source IDE (**I**ntegrated **D**evelopment **E**nvironment)
+* Open source editor
 * Great tools
 * Good defaults
 * Fast

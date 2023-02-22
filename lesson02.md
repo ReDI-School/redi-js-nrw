@@ -1,14 +1,12 @@
 <!-- .slide: id="lesson2" -->
 
-# Basic Frontend - Spring 2023
+# Basic Frontend
 
-Lesson 2
-
-(Please install Visual Studio Code if you haven't already)
+Lesson 2: Variables, Console, Comments
 
 ---
 
-# Lets introduce ourselves!
+# Please install Visual Studio Code if you haven't already
 
 ---
 
@@ -285,7 +283,6 @@ JavaScript executes the code from top to bottom, line by line.
 
 JavaScript will ignore comments.
 
-
 ---
 
 ### top to bottom, line by line
@@ -301,7 +298,6 @@ let name = "Obi-Wan Kenobi";
 
 console.log(name); // correct!
 ```
-
 
 ---
 
@@ -358,6 +354,232 @@ console.log(degreesInFahrenheit); // 82.4‬
 
 ---
 
+## Pass-by-value
+
+---
+
+## Passing basic data types
+
+* What do you think `x` and `y` are at the end of the program?
+
+```js
+let x = 42;
+let y = x;
+x = 43;
+console.log(x);
+console.log(y);
+```
+
+Answer: x is 43, y is 42 <!-- .element: class="fragment" -->
+
+---
+
+<!-- .slide: style="font-size:80%" -->
+
+### Bass-by-value
+
+* All basic data types (number, string, ...) are passed by value.
+* If you assign a variable to another variable, its value is _copied_.
+
+---
+
+## Recap: Operator chaining
+
+---
+
+### Operator chaining
+
+We can "chain" operators, for example:
+
+```js
+1 + 2 + 3
+(1 + 2) + 3  // same as above
+(3) + 3      // returns 6
+```
+
+---
+
+### Operator chaining
+
+* Is the following code valid?
+
+```js
+5 < 6 < 7
+```
+
+* Answer: It's valid JavaScript, but pointless  <!-- .element: class="fragment" -->
+
+---
+
+### Operator chaining (cont.)
+
+* Let's break it down:
+
+```js
+5 < 6 < 7
+```
+
+```js
+(5 < 6) < 7   // 5 < 6 is true
+```
+<!-- .element: class="fragment" -->
+
+```js
+true < 7      // pointless comparison!
+```
+<!-- .element: class="fragment" -->
+
+* comparing a boolean to a number makes no sense. Don't chain comparison operators.
+<!-- .element: class="fragment" -->
+
+---
+
+### Quiz
+
+* What does the following return?
+
+```js
+5 === 5 === 5
+```
+
+```js
+(5 === 5) === 5
+true === 5         // returns false
+```
+<!-- .element: class="fragment" -->
+
+---
+
+## Operator precedence
+
+---
+
+### Operator precedence
+
+What do you think is the result?
+
+```js
+2 + 2 * 2
+```
+
+Result: `6` <!-- .element: class="fragment" -->
+
+---
+
+### Operator precedence (cont.)
+
+* JavaScript supports precedence (priority) for operators
+* Operators with higher precedence are evaluated before operators with lower precedence
+* Full List: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+* Multiplication (15) has higher precedence than addition (14) - multiplication wins
+
+---
+
+### Operator precedence (cont.)
+
+* Parentheses have the highest precedence (21) and always win:
+
+```js
+(2 + 2) * 2   // 8
+2 + (2 * 2)   // 6
+```
+
+* When in doubt, use parentheses!
+
+---
+
+### Quiz
+
+* What does the following return?
+
+```js
+false && false || true
+```
+
+* Hint: Logical AND (6) has higher precedence than Logical OR (5) <!-- .element: class="fragment" -->
+
+```js
+(false && false) || true   // false && false is false
+false || true              // returns true
+```
+<!-- .element: class="fragment" -->
+
+---
+
+### Best practice: Use variables instead of chaining
+
+Which of the two is more readable?
+
+```js
+42 > 22 && 42 > 35
+```
+
+```js
+let myAge = 42;
+let leftPersonAge = 22;
+let rightPersonAge = 35;
+
+let olderThanLeft = myAge > leftPersonAge;
+let olderThanRight = myAge > rightPersonAge;
+let isOldest = olderThanLeft && olderThanRight;
+```
+
+---
+
+## Combined Operators
+
+---
+
+### Operators
+
+| Group | Operators | Example |
+| ----- | --------- | ------- |
+| Numerical Operators | `+ - * /` | `5 + 4 * 3`<br/>`7 / 2 - 2`<br/>`"Hello" + " World"` |
+| Comparison Operators | `=== !== < > <= >=` | `temperature !== 25`<br/>`age >= 18` |
+| Logical Operators | &#124;&#124; `&& !` | `a && !b`<br />`x >= 5 && x < 15` |
+| **Combined Operators** | `+= -= *= /= ++` | `a *= 2`<br />`count++` |
+
+---
+
+### Combined Operators
+
+```js
+let myAge = 42;
+myAge = myAge + 1; // how old will I be next year?
+```
+
+Is the same as:
+
+```js
+let myAge = 42;
+myAge += 1;   // same as myAge = myAge + 1
+```
+
+---
+
+### Quiz: What's the price?
+
+```js
+let price = 10;
+// there's a 50 percent sale!
+price /= 2;
+```
+
+Result: `5` <!-- .element: class="fragment" -->
+
+---
+
+### Operator ++ and --
+
+* Operator `++` and `--` increase (or decrease) the value of a variable by 1
+
+```js
+let myAge = 42;
+myAge++; // same as myAge = myAge + 1
+```
+
+---
+
 ### what we learned
 
 * Variables are pointers to values:
@@ -374,7 +596,7 @@ console.log(degreesInFahrenheit); // 82.4‬
 
 <!-- .slide: id="lesson2:homework" -->
 
-### HomeWork
+### HomeWork - Optional
 
 You have an online shop, which sells hats and t-shirts. One of the customers wants to buy 2 hats and 3 t-shirts.
 

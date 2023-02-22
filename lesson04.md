@@ -1,8 +1,8 @@
 <!-- .slide: id="lesson4" -->
 
-# Basic Frontend - Spring 2023
+# Basic Frontend
 
-Lesson 4
+Lesson 4: Functions
 
 ---
 
@@ -273,6 +273,36 @@ console.log(numberSquared); // 25
 
 ---
 
+### Converting string to number
+
+What is the result?
+
+```js
+let a = 1 + 1;
+let b = 1 + "1";
+```
+
+```js
+let a = 1 + 1;    // 2
+let b = 1 + "1";  // "11"
+```
+<!-- .element: class="fragment" -->
+
+---
+
+### Converting string to number
+
+We can turn a string to a number using `parseInt` or `parseFloat`:
+
+```js
+let a = parseInt("42");   // a is number: 42
+let b = parseInt("-42");  // b is number: -42
+let c = parseInt("1.1");  // c is number: 1
+let d = parseFloat("1.1") // d is number: 1.1
+```
+
+
+---
 
 ### Exercise
 
@@ -330,9 +360,122 @@ console.log('min of -10 and 0 is ' + min(-10, 0));
 
 ---
 
+### Recap - Preject
+
+Which of the following will output `42`?
+
+```js
+console.log(a);      // [1]
+function foo() {
+    console.log(a);  // [2]
+    let a = 42;
+    console.log(a);  // [3]
+}
+console.log(a);      // [4]
+```
+
+---
+
+### Recap - Preject
+
+Which of the following will output `42`?
+
+```js
+console.log(a);      // [1] ERROR
+function foo() {
+    console.log(a);  // [2] ERROR
+    let a = 42;
+    console.log(a);  // [3] 42
+}
+console.log(a);      // [4] ERROR
+```
+
+---
+
+### Recap - Preject
+
+```js
+function fun1() {
+    let veryImportantVariable = 42;
+}
+function fun2() {
+    // Question: How do I access veryImportantVariable????
+}
+```
+
+---
+
+### Recap - Preject
+
+```js
+// move the variable outside the function
+let veryImportantVariable = 42;
+function fun1() {
+}
+function fun2() {
+}
+```
+
+---
+
+### Recap - Preject
+
+What's the difference?
+
+```js
+let a = 42;
+let b = 43;
+```
+
+```js
+a = 42;
+b = 43;
+```
+
+---
+
+What's the difference?
+
+```js
+let a = 42;
+let b = 43;
+```
+
+```js
+a = 42;
+b = 43;
+```
+
+The last one creates **global** variables. Those will be visible to everyone, your colleagues, third-party libraries, etc. etc. DO NOT EVER DO THAT. Your colleagues will hate you, your boss will shout at you, your CEO will point at you and your teacher will cry.
+
+---
+
+### Recap - Preject
+
+What's the difference?
+
+```js
+function onMyButtonClick() {
+    let myElement = document.getElementById("input");
+    myElement.value = 42;
+}
+```
+
+```js
+let myElement = document.getElementById("input");
+function onMyButtonClick() {
+    myElement.value = 42;
+}
+```
+
+Fist one asks for the `input` element every time the button is clicked, last one only once when the page loads.
+<!-- .element: class="fragment" -->
+
+---
+
 <!-- .slide: id="lesson4:homework1" -->
 
-### Homework 1
+### Homework - Optional - Part 1/2
 
 Write a function that takes name of a person, their age, and the language they speak, and returns a string that introduces this person.
 
@@ -346,7 +489,7 @@ John, 18, English &#8594; **"Hello! my name is John, I am 18 years old and I spe
 
 <!-- .slide: id="lesson4:homework2" -->
 
-### Homework 2
+### Homework - Optional - Part 2/2
 
 Change the employee solution from before, and turn it into a function.
 

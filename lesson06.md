@@ -1,263 +1,567 @@
 <!-- .slide: id="lesson6" -->
 
-# Basic Frontend - Spring 2023
+# Basic Frontend
 
-Lesson 6
-
----
-
-<!-- .slide: id="lesson6:loops" -->
-
-## Loops
+Lesson 6: DOM
 
 ---
 
-### Loops
+<!-- .slide: id="lesson9:DOM" -->
 
-![loops](images/loop_js-02-farm.png)
-
-<!-- from: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code -->
+# DOM
 
 ---
 
-### While loop
+### API
 
-A `while` loop repeats its body while its `condition` is `true`:
+* `API` stands for **A**pplication **P**rogramming **I**nterface
+* An API is a set of definitions and protocols for building and integrating application software.
+* It's a contract between two parties, for example between the developer and the browser
+
+---
+
+### DOM
+
+* `DOM` stands for **D**ocument **O**bject **M**odel
+* DOM is a programming API for HTML documents
+* It defines the logical structure of documents and the way a document is accessed and manipulated
+
+---
+
+### DOM
+
+* But how do we use DOM?
+* `document` is a variable provided by browser for us: https://developer.mozilla.org/en-US/docs/Web/API/Document
+* The type of document is `object`.
+* `document.body.style.backgroundColor` is a property pointing to the backgroundColor of the style of the body of the document.
+
+---
+
+### DOM - selecting HTML items
+
+Let's create a HTML element:
+
+```html
+<input type="text" value="hello" />
+```
+
+How can we access that from JavaScript?
+
+---
+
+### DOM - selecting HTML items by ID
+
+Let's give it an `id` attribute:
+
+```html
+<input type="text" value="hello" id="myInput" />
+```
+
+---
+
+### DOM - selecting HTML items by ID
+
+```html
+<input type="text" value="hello" id="myInput" />
+```
+
+We can now use `document.getElementById()`:
 
 ```js
-while (condition) {
-  // body is executed while "condition" is true
-  console.log("Hello from while loop");
+let input = document.getElementById("myInput");
+```
+
+The variable `input` now points to our HTML input!
+
+---
+
+### DOM - manipulating attributes
+
+```js
+let input = document.getElementById("myInput");
+```
+
+We can access any attributes of our HTML element like a property of an object:
+
+```js
+console.log(input.value);  // prints "hello"
+```
+
+---
+
+### DOM - manipulating attributes
+
+```js
+let input = document.getElementById("myInput");
+```
+
+We can also modify the attributes:
+
+```js
+input.value = "world"; // changed the value of the input to "world"
+```
+
+---
+
+### Exercise - DOM manipulation
+
+* Create an empty HTML file, add an `<input>` element and give it an `id` attribute
+* Create a JavaScript file. Use `document.getElementById()` to get your input element
+* Look at the properties of the HTML Input: https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement
+* Try to set / get a few
+
+---
+
+### Homework - DOM
+
+* Create an empty HTML file. Add an `<input>`, a `<button>` and a `<div>`
+* Add a function to your JavaScript file
+* In the `onclick` attribute of your `<button>`, call that function
+* Inside your function, get the value attribute from your input
+* Set the background color of the `<div>` to the value of your input
+
+---
+
+DOM defines:
+* the structure of (HTML) documents
+* *the way a document is accessed and manipulated*
+
+---
+
+
+```html
+<input type="text" value="hello" />
+```
+How can I get this input element in JavaScript?
+
+```html
+<input type="text" value="hello" id="myInput" />
+```
+<!-- .element: class="fragment" -->
+
+```js
+let input = document.getElementById("myInput");
+input.value = "world";
+```
+<!-- .element: class="fragment" -->
+
+---
+
+### Homework solution
+
+```html
+<body>
+  <input type='text' id='colorInput' />
+  <button onclick='setBackground()'>Change!</button>
+  <div id='myDiv'>Hello!</div>
+
+  <script src='main.js'></script>
+</body>
+```
+```js
+function setBackground() {
+  let inputElement = document.getElementById("colorInput");
+  let color = inputElement.value;
+  let divElement = document.getElementById("myDiv");
+  divElement.style.backgroundColor = color;
 }
 ```
+
+---
+
+### Exercise
+
+remove the value from the input field after the user presses the button.
+
+
+---
+
+### solution
+
+```js
+function setBackground() {
+  let inputElement = document.getElementById("colorInput");
+  let color = inputElement.value;
+  let divElement = document.getElementById("myDiv");
+  divElement.style.backgroundColor = color;
+  inputElement.value = ''; // this removes the value
+}
+```
+
+---
+
+### Setting the text
+
+If we want to add or change any text, we can use [`textContent`](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent)
 
 Example:
 
 ```js
-while (isHungry) {
-  eat();
-}
-```
-
-While `isHungry` is `true`, the function `eat` is called.
-
----
-
-### While loop 2
-
-A while loop might execute zero to unlimited times:
-
-```js
-let isHungry = false; // we just ate
-while (isHungry) {
-  eat(); // this is never reached!
-}
+let myElement = document.getElementById("myId");
+myElement.textContent = "I changed the text!";
 ```
 
 ---
 
-### While loop 3
+### Exercise
 
-Always make sure that a `while` loop's condition is eventually set to `false`:
+Change the text content of the div to the color that the user choose!
+
+
+---
+
+### solution
 
 ```js
-while (true) {
-  console.log("Hello");
-  // this code will print "Hello" until your laptop
-  // runs out of battery, you kill the process
-  // by closing the browser, you reboot or the universe ends
-}
-
-while (isHungry) {
-  goRunning(); // going running makes us more hungry
-               // loop won't terminate!!!
+function setBackground() {
+  let inputElement = document.getElementById("colorInput");
+  let color = inputElement.value;
+  let divElement = document.getElementById("myDiv");
+  divElement.style.backgroundColor = color;
+  input.value = '';
+  divElement.textContent = color; // now we changed the text!
 }
 ```
 
 ---
 
-### Counting
+Okay, lets add more stuff to our small page.
 
-Quiz: Let's `console.log` the numbers from 1 to 5 using a `while` loop.
+We want to show all the colors that the user has chosen.
+
+Lets start be adding an unordered list.
+
+```html
+<body>
+  <input type='text' id='colorInput' />
+  <button onclick='setBackground()'>Change!</button>
+  <div id='myDiv'>Hello!</div>
+  <ul id='colorList'></ul>
+
+  <script src='main.js'></script>
+</body>
+```
 
 ---
 
-### Counting - solution
 
-Quiz: Let's `console.log` the numbers from 1 to 5 using a `while` loop.
+We can create HTML elements using [document.createElement](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement).
+
+for this page, we want to create list item or `li`;
 
 ```js
-let i = 1;          // initialize i with 1
-while (i < 6) {     // repeat this loop until we reach 6
-  console.log(i);
-  i++;              // increment i at every step
+// we put the tag in the () of createElement
+let itemElement = document.createElement("li");
+itemElement.textContent = "I am new item!";
+```
+Try it!
+
+---
+
+Unfortunately, the element is not on the page.
+
+We have to tell the browser where to put it.
+
+We do that using [appendChild](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild):
+
+```js
+let itemElement = document.createElement("li");
+itemElement.textContent = "I am new item!";
+
+let listElement = document.getElementById("colorList");
+//this means add itemElement as a child of listElement
+listElement.appendChild(itemElement);
+```
+
+---
+
+
+We want to show the color that the user has choose in our item that we created.
+
+What do we have to do?
+
+```js
+itemElement.textContent = color;
+```
+<!-- .element: class="fragment" -->
+
+---
+
+### exercise
+
+Change the background color of the item to the color!
+
+```js
+itemElement.style.backgroundColor = color;
+```
+<!-- .element: class="fragment" -->
+
+---
+
+### exercise
+
+When we click on an item in our list, we want to change the background color of the div to that of the item.
+
+
+```js
+itemElement.onclick = function () {
+  divElement.style.backgroundColor = color;
+};
+```
+<!-- .element: class="fragment" -->
+
+---
+
+### Quiz: DOM
+
+What is the output? And why?
+
+```js
+typeof document;
+```
+
+```js
+"object"
+```
+<!-- .element: class="fragment" -->
+
+---
+
+### Quiz: DOM
+
+How do we change the `value` of an `input` at runtime?
+
+```html
+<input id="myInput" value="blah">
+```
+
+```js
+let inputElement = document.getElementById("myInput");
+inputElement.value = "blubb";
+```
+<!-- .element: class="fragment" -->
+
+---
+
+How do we change the text of a `div` at runtime?
+
+```html
+<div id="myDiv">Blah</div>
+```
+
+```js
+let divElement = document.getElementById("myDiv");
+divElement.textContent = "blubb";
+```
+<!-- .element: class="fragment" -->
+
+---
+
+How do we add a child `li` element?
+
+```html
+<ul id="myList"></ul>
+```
+
+```js
+let listElement = document.getElementById("myList");
+let itemElement = document.createElement("li");
+itemElement.textContent = "new item";
+listElement.appendChild(itemElement);
+```
+<!-- .element: class="fragment" -->
+
+---
+
+### DOM Exercise
+
+1. Create the usual empty HTML and JavaScript file
+1. Remember to load your JavaScript file in the body using a `<script src=""></script>` tag
+1. Add one `<ul id="todoList"></ul>` to your HTML page
+1. In your JavaScript file, add an array of things you need to do, for example: `let todoItems = [ "wash dishes", "learn JavaScript", "do sport" ];`
+1. Add all the `todoItems` from your JavaScript Array to your `<ul>` using the DOM API
+
+---
+
+### Solution
+
+```js
+let todoListElement = document.getElementById("todoList");
+let todoItems = [ "wash dishes", "learn JavaScript", "do sport" ];
+for (let i = 0; i < todoItems.length; i++) {
+    let todoElement = document.createElement("li");
+    todoElement.textContent = todoItems[i];
+    todoListElement.appendChild(todoElement);
 }
 ```
 
 ---
 
-### Quiz
+### A note about DOM event handlers
 
-What will this loop output?
-
-```js
-let i = 0;
-while (i < 2) {
-  console.log(i);
-}
-```
-
-Answer: 0, until you run out of battery<!-- .element: class="fragment" -->
-
----
-
-### Quiz
-
-* How many times will the loop run?
+* We already learned that HTML Elements have a `onclick` property.
+* We know that this property must be a function.
+* We know that we can declare functions like:
 
 ```js
-let i = 10;
-while (i < 15) {
-  console.log(i);
-  i++;
-}
-```
-
-Answer: 5<!-- .element: class="fragment" -->
-
----
-
-### Exercises
-
-* Output your name five times
-* Output the squares of the first 10 numbers (1, 4, 9, 16, ...)
-* Output the sum of the first 10 numbers
-
----
-
-### For loops - parts
-
-Remember this? Let's divide it in parts
-
-```js
-let i = 1;          // part 1 - initialize the counter
-while (i < 6) {     // part 2 - the exit condition
-  console.log(i);
-  i++;              // part 3 - update the counter
-}
-```
-
-You can see that all three parts are spread around.
-If the body of the `while` loop gets more complex, it
-might be difficult to figure out how long the while loop
-runs.
-
----
-
-### For loops
-
-How can we express the three parts of our while loop better?
-
-We can use a for loop:
-
-```js
-for (init; test; update) {
-  // body
-}
-```
-
-The `for` loop consists of three parts, separated by semicolon (`;`)
-
----
-
-### For loop
-
-Let's replace our `while` loop with a `for`:
-
-```js
-let i = 1;          // part 1 - initialize the counter
-while (i < 6) {     // part 2 - the exit condition
-  console.log(i);
-  i++;              // part 3 - update the counter
-}
-
-// same code with for loop:
-
-for (let i = 1; i < 6; i++) {
-  console.log(i);
+function foo() {
+  console.log("foo was called");
 }
 ```
 
 ---
 
-### For loop - summary
+### A note about DOM event handlers
 
-* A `while` loop executes its body while the condition is `true`.
-* A `for` loop *first* runs the **init** part, checks the **condition** part
-and if it is `true`, executes the body. After every loop, it executes the **update** part.
-
----
-
-### For vs. while
-
-* We use a `for` loop if we know in advance how often it will be executed.
+* However, variables can be functions, too:
 
 ```js
-for (let i = 0; i < 1000; i++) { console.log(i); }
+let foo = function() {
+  console.log("foo was called");
+}
 ```
 
-* We use a `while` loop if we don't know how many times the loop will be executed.
+* What this means: Create a new variable called `foo` and initialize it with a function
+
+---
+
+### A note about DOM event handlers
+
+* Variables containing a function can be used exactly like variables containing a `number`, `array` or `object`:
 
 ```js
-while (passwordIsWrong) { askForPassword(); }
+let foo = function() {
+  console.log("foo was called");
+}
+let bar = foo;  // now foo and bar point to the same function
+bar();          // prints "foo was called"
 ```
 
 ---
 
-### Exercises
+### A note about DOM event handlers
 
-* Draw a pyramid to console:
-
-```
-*
-**
-***
-****
-*****
-```
-* BONUS: Count down from 10 to 0 and output it on console.
-* BONUS: Solve chapter 2 of http://roverjs.com/
-
----
-
-### Remainder Operator
-
-* For the next exercise, we need the [Remainder Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder): `%`
-* It shows you what integer remains when you divide one number by another
-* Question: What is left when you divide 6 coins between 3 friends? Answer: 0 coins
-* Question: What is left when you divide 8 coins between 3 friends? Answer: 2 coins
-
----
-
-### Remainder Operator
+* The function can access all variables visible to it (technical term: "Closure"):
 
 ```js
-6 % 3  // 0
-7 % 3  // 1
-8 % 3  // 2
-9 % 3  // 0
-10 % 3 // 1
-11 % 3 // 2
-12 % 3 // 0
+let x = 42;
+let foo = function() {
+  console.log("foo was called with x: " + x);
+}
+let bar = foo;  // now foo and bar point to the same function
+bar();          // prints "foo was called with x: 42"
 ```
 
 ---
 
-### Homework
+### A note about DOM event handlers
 
-This is a real interview question for a Junior JavaScript developer:
+* So if we want to set an `onclick` handler:
 
-* Print all the numbers from 1 to 100 to console
-  * If the number is divisible by 3, print “Fizz” instead
-  * If the number is divisible by 5 (and not by 3), print “Buzz” instead
-  * If the number is divisible by both 3 and 5, print “FizzBuzz” instead
+```js
+let myClickFunction = function() { /* some code */ }
+document.body.onclick = myClickFunction;
+```
+
+* Or directly:
+
+```js
+document.body.onclick = function() { /* some code */ }
+```
+
+---
+
+### Exercise
+
+* Can you add a onclick handler to each of your `<li>` elements that changes the text to strike through (e.g. ~wash dishes~)?
+* Hint: Use the `textDecoration` property:
+
+```js
+todoElement.style.textDecoration = "line-through";
+```
+
+---
+
+### Solution
+
+```js
+let todoListElement = document.getElementById("todoList");
+let todoItems = [ "wash dishes", "learn JavaScript", "do sport" ];
+for (let i = 0; i < todoItems.length; i++) {
+    let todoElement = document.createElement("li");
+    todoElement.textContent = todoItems[i];
+    todoElement.onclick = function() {
+        todoElement.style.textDecoration = "line-through";
+    }
+    todoListElement.appendChild(todoElement);
+}
+```
+
+---
+
+### Exercise
+
+* Can you remove the strike-through if a strike-through item is clicked?
+
+---
+
+### Solution
+
+```js
+    todoElement.onclick = function() {
+        if (todoElement.style.textDecoration === "line-through") {
+            todoElement.style.textDecoration = "";
+        } else {
+            todoElement.style.textDecoration = "line-through";
+        }
+    }
+```
+
+---
+
+### Getting all the children
+
+* HTML Elements are hierarchical:
+
+```html
+<body>
+    <ul>
+        <li>Wash dishes</li>
+    </ul>
+</body>
+```
+
+* Every HTML Element has zero or more children
+
+---
+
+### Getting all the children
+
+* Every HTML Element has a children property:
+
+```js
+let items = todoListElement.children;
+```
+
+* The property returns an array of all _direct_ children
+
+---
+
+### Visiting all children
+
+* We can use a `for` loop to go through all children:
+
+```js
+let items = todoListElement.children;
+for (let i = 0; i < items.length; i++) {
+    console.log("item: " + items[i].textContent);
+}
+```
+
+---
+
+### Exercise
+
+* Can you add a button "Mark all done" that strikes through all your TODO items?
+* Hint: Use the `children` property of your `<ul>` element.
+* BONUS: Add an `<input>` field and a `<button>` to dynamically add new TODO items to your `<ul>`

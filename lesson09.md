@@ -1,8 +1,8 @@
 <!-- .slide: id="lesson9" -->
 
-# Basic Frontend - Spring 2023
+# Basic Frontend
 
-Lesson 9
+Lesson 9: OOP
 
 ---
 
@@ -190,116 +190,153 @@ let person = {
 
 ---
 
-<!-- .slide: id="lesson9:DOM" -->
+### Recap
 
-# DOM
+Can you explain the following?
 
----
-
-### API
-
-* `API` stands for **A**pplication **P**rogramming **I**nterface
-* An API is a set of definitions and protocols for building and integrating application software.
-* It's a contract between two parties, for example between the developer and the browser
+* REST API
+* JSON
+* `fetch` API
+* `async` / `await` keywords
 
 ---
 
-### DOM
+### REST APIs
 
-* `DOM` stands for **D**ocument **O**bject **M**odel
-* DOM is a programming API for HTML documents
-* It defines the logical structure of documents and the way a document is accessed and manipulated
+A good resource to find available REST APIs on the web is:
 
----
-
-### DOM
-
-* But how do we use DOM?
-* `document` is a variable provided by browser for us: https://developer.mozilla.org/en-US/docs/Web/API/Document
-* The type of document is `object`.
-* `document.body.style.backgroundColor` is a property pointing to the backgroundColor of the style of the body of the document.
+https://www.programmableweb.com/
 
 ---
 
-### DOM - selecting HTML items
+### async / await
 
-Let's create a HTML element:
-
-```html
-<input type="text" value="hello" />
-```
-
-How can we access that from JavaScript?
+* Only `async` functions can `await` on other `async` functions, e.g. waiting for long running operations to complete
+* The rest of the JavaScript code continues to execute, JavaScript should never block!
+* Once the other `async` function finishes ("resolves"), our function resumes to execute
 
 ---
 
-### DOM - selecting HTML items by ID
+### async / await
 
-Let's give it an `id` attribute:
-
-```html
-<input type="text" value="hello" id="myInput" />
-```
-
----
-
-### DOM - selecting HTML items by ID
-
-```html
-<input type="text" value="hello" id="myInput" />
-```
-
-We can now use `document.getElementById()`:
+Explain the difference between `func2` and `func3`:
 
 ```js
-let input = document.getElementById("myInput");
-```
+async function func1() {
+  await fetch("blah");
+}
 
-The variable `input` now points to our HTML input!
+async function func2() {
+  await func1();
+  console.log("end of func2");
+}
 
----
-
-### DOM - manipulating attributes
-
-```js
-let input = document.getElementById("myInput");
-```
-
-We can access any attributes of our HTML element like a property of an object:
-
-```js
-console.log(input.value);  // prints "hello"
+async function func3() {
+  func1();
+  console.log("end of func3");
+}
 ```
 
 ---
 
-### DOM - manipulating attributes
+### async / await
+
+* `func2` waits for the `fetch` call in `func1` to finish, then prints "end of func2".
+* `func3` also calls `func1`, but doesn't wait until the `fetch` in `func1` finishes. It prints "end of func3" immediately, no matter how long `func1` needs to finish/resolve.
+
+---
+
+### async / await
+
+What's the difference between `reply1` and `reply2`?
 
 ```js
-let input = document.getElementById("myInput");
-```
+async function func1() {
+    let response = await fetch("blah");
+    return response;
+}
 
-We can also modify the attributes:
-
-```js
-input.value = "world"; // changed the value of the input to "world"
+async function func2() {
+    let reply1 = await func1();
+    let reply2 = func1();
+}
 ```
 
 ---
 
-### Exercise - DOM manipulation
+### async / await
 
-* Create an empty HTML file, add an `<input>` element and give it an `id` attribute
-* Create a JavaScript file. Use `document.getElementById()` to get your input element
-* Look at the properties of the HTML Input: https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement
-* Try to set / get a few
+* `reply1` contains the the response from the `fetch` call. We can call e.g. `await reply1.json()` to interpret the response as JSON object.
+* `reply2` doesn't wait for `func1` to finish/resolve. We can _not_ call `await reply2.json()` on it!
+* Rule of thumb: Always call an `async function` with `await`
 
 ---
 
-### Homework - DOM
+### recap: fetch
 
-* Create an empty HTML file. Add an `<input>`, a `<button>` and a `<div>`
-* Add a function to your JavaScript file
-* In the `onclick` attribute of your `<button>`, call that function
-* Inside your function, get the value attribute from your input
-* Set the background color of the `<div>` to the value of your input
+* We use the fetch API to download content via http(s) from within JavaScript:
+
+```js
+async function fetchMyApi() {
+  // "fetch" the URL from the internet in the background
+  let response = await fetch("https://my.api/something");
+  // once we have a response, interpret it as JSON:
+  let result = await response.json();
+}
+```
+
+---
+
+### innerHTML / textContent
+
+* If you have existing HTML code, you can assign that to a HTML element using innerHTML:
+
+```js
+// Adds a "bold" Hello to your div:
+myDiv.innerHTML = "<b>Hello</b>";
+// Adds the literal text "<b>Hello</b>" to your other div:
+myOtherDiv.textContent = "<b>Hello</b>";
+```
+
+---
+
+### Quiz time!
+
+* Go to https://opentdb.com/api_config.php
+* Select a category, a difficulty, and set "Multiple Choice" as Type
+* Click on "Generate API URL"
+* Copy the URL that appeared on top of the page, for example:
+https://opentdb.com/api.php?amount=10&category=18&difficulty=medium&type=multiple
+* Download the URL above.
+* Look at the reply, what does it contain? How can you access its elements?
+
+---
+
+### Quiz time!
+
+* Think about your Quiz HTML page. How would you like it structured?
+* All 10 questions at once, or question after question?
+* Which HTML elements do we need?
+* Do we create those in HTML and use `document.getElementById` to access them from JavaScript?
+* Do we create them in JavaScript with `document.createElement`?
+
+---
+
+### Quiz time!
+
+* Create your HTML page
+* Now, we need the logic. That's where JavaScript comes in :)
+* Use `fetch` to fetch your results. Remember to `await` and interpret the response as JSON
+* Let's start simple - display only one question of your quiz.
+* Tell the user whether the answer was correct or not
+
+---
+
+### Quiz time!
+
+* Now comes the tricky part - once the user chose an answer, we need to display the next question. But since we don't want to write the same code twice, how can we structure the code?
+* Try to write a `function` that takes a question and shows it on the screen
+* After the user chose his answer, call your function to show the next question
+* Bonus: Keep track of the score (how many correct/wrong answers).
+* Bonus: Add some CSS to make it pretty
+* Bonus: Add a button to restart the game from the beginning
