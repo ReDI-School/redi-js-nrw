@@ -554,30 +554,7 @@ while (emailIsWrong) { askForEmail(); }
 
 ---
 
-### Remainder Operator
-
-* For the next exercise, we need the [Remainder Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder): `%`
-* It shows you what integer remains when you divide one number by another
-* Question: What is left when you divide 6 coins between 3 friends? Answer: 0 coins
-* Question: What is left when you divide 8 coins between 3 friends? Answer: 2 coins
-
----
-
-### Remainder Operator
-
-```js
-6 % 3  // 0
-7 % 3  // 1
-8 % 3  // 2
-9 % 3  // 0
-10 % 3 // 1
-11 % 3 // 2
-12 % 3 // 0
-```
-
----
-
-### Homework - Optional
+### Further Practice
 
 This is a real interview question for a Junior JavaScript developer:
 
@@ -585,6 +562,8 @@ This is a real interview question for a Junior JavaScript developer:
   * If the number is divisible by 3, print “Fizz” instead
   * If the number is divisible by 5 (and not by 3), print “Buzz” instead
   * If the number is divisible by both 3 and 5, print “FizzBuzz” instead
+
+Hint: Check the Reminder Operator in lesson 2.
 
 ---
 

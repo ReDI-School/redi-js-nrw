@@ -580,6 +580,26 @@ myAge++; // same as myAge = myAge + 1
 
 ---
 
+### Remainder Operator
+
+* [Remainder Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder): `%`
+
+```js
+6 % 3  // 0
+7 % 3  // 1
+8 % 3  // 2
+9 % 3  // 0
+10 % 3 // 1
+11 % 3 // 2
+12 % 3 // 0
+```
+
+* It shows you what integer remains when you divide one number by another
+* Question: What is left when you divide 6 coins between 3 friends? Answer: 0 coins
+* Question: What is left when you divide 8 coins between 3 friends? Answer: 2 coins
+
+---
+
 ### what we learned
 
 * Variables are pointers to values:
