@@ -596,7 +596,7 @@ myAge++; // same as myAge = myAge + 1
 
 <!-- .slide: id="lesson2:homework" -->
 
-### HomeWork - Optional
+### Further Practice
 
 You have an online shop, which sells hats and t-shirts. One of the customers wants to buy 2 hats and 3 t-shirts.
 
