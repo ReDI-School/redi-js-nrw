@@ -31,7 +31,7 @@ You'll learn how to use JavaScript to filter items in the DOM. This is a key ski
 
 ## 3 Expenses chart component
 Level: 2 JUNIOR</br>
-https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt </br>
+https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt </br>
 In this challenge, you'll create a bar chart component from scratch. We provide a local JSON file, so you can add the chart data dynamically if you choose.
 ### Brief
 Your users should be able to:
@@ -45,46 +45,103 @@ Your challenge is to build out this bar chart component and get it looking as cl
 You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 We provide the data for the chart in a local data.json file. So you can use that to add the bars dynamically if you choose.
 
+## 4 Interactive card details form
+Level: 2 JUNIOR</br>
+https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw </br>
+This fun project will be an excellent way to practice DOM manipulation and form validation while also putting your HTML and CSS skills to the test.
+### Brief
+Your users should be able to:
+- Fill in the form and see the card details update in real-time
+- Receive error messages when the form is submitted if:
+- Any input field is empty
+- The card number, expiry date, or CVC fields are in the wrong format
+- View the optimal layout depending on their device's screen size
+- See hover, active, and focus states for interactive elements on the page
+### Learning Outcomes
+Your challenge is to build out this interactive card details form and get it looking as close to the design as possible.
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
-# Other project ideas
+## 5 Interactive rating component
+Level: 1 NEWBIE </br>
+https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI </br>
+This is a nice, small project to practice handling user interactions and updating the DOM. Perfect for anyone who has learned the basics of JavaScript!
+### Brief
+Your users should be able to:
+- Select and submit a number rating
+- See the "Thank you" card state after submitting a rating
+- See hover and focus states for all interactive elements on the page
+### Learning Outcomes
+Your challenge is to build out this interactive rating component and get it looking as close to the design as possible.
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
-## Plant App
+## 6 Interactive comments section
+Level: 3 INTERMEDIATE </br>
+https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9 </br>
+This is project will put your JavaScript skills to the test. We provide a JSON file to pull the data, but it's also a perfect project to build as a full-stack CRUD app!
+### Brief
+Your users should be able to:
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Create, Read, Update, and Delete comments and replies
+- Upvote and downvote comments
+- Bonus: If you're building a purely front-end project, use localStorage to save the current state in the browser that persists when the browser is refreshed
+- Bonus: Build this project as a full-stack application
+### Learning Outcomes
+Your challenge is to build out this interactive comments section and get it looking as close to the design as possible.
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
-## Find non-smoking bars
+## 7 E-commerce product page
+Level: 3 INTERMEDIATE </br>
+https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6 </br>
+In this challenge, you'll build a beautiful product page. We'll be putting your JS skills to the test with a lightbox product gallery and cart functionality!
+### Brief
+Your users should be able to:
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Open a lightbox gallery by clicking on the large product image
+- Switch the large product image by clicking on the small thumbnail images
+- Add items to the cart
+- View the cart and remove items from it
+### Learning Outcomes
+Your challenge is to build out this interactive comments section and get it looking as close to the design as possible.
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
-## Free drinking water finding app
+## 8 Tip calculator app
+Level: 2 JUNIOR </br>
+https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX </br>
+This small app is perfect for anyone starting to get to grips with JavaScript. The calculator functionality will be a nice test!
+### Brief
+Your users should be able to:
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Calculate the correct tip and total cost of the bill per person
+### Learning Outcomes
+Your challenge is to build out this tip calculator app and get it looking as close to the design as possible.
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
-## Corona virus tracking app
+## 9 Tip calculator app
+Level: 3 INTERMEDIATE </br>
+https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz- </br>
+This will be a fun one! Your challenge is to build this countdown timer. There are lots of small CSS tests in the design as well. So it should keep you busy!
+### Brief
+Your users should be able to:
+- See hover states for all interactive elements on the page
+- See a live countdown timer that ticks down every second
+- Bonus: When a number changes, make the card flip from the middle
+### Learning Outcomes
+Your challenge is to build out this tip calculator app and get it looking as close to the design as possible.
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
-## International Weather app
-
-## eLearning website
-
-* Show a series of videos on user's choice
-* Could be academic or practical life tips
-
-## Multilanguage dictionary
-
-* Translate a word simultaneously into multiple languages
-* Useful when meeting with a multilingual crowd
-
-## Deutsche Bahn app
-
-* Show status of elevators and escalators
-* Useful for people disabilities
-
-## Plant tracking apps
-
-* Add profile for every plant
-* Reminders when to water and when to fertilize
-* (maybe) show whether your home is cat/dog friendly
-
-## Movies and TV Series app
-
-* Search for movies and TV
-* Show information and trailers
-
-## Tinder for dogs
-
-* Find playdates for your dog
-
+## 10 Rock, Paper, Scissors game
+Level: 3 ADVANCED</br>
+https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH </br>
+This challenge will test your HTML, CSS and JavaScript skills. There's even a Rock, Paper, Scissors, Lizard, Spock version if you really want to challenge yourself.
+### Brief
+Your users should be able to:
+- View the optimal layout for the game depending on their device's screen size
+- Play Rock, Paper, Scissors against the computer
+- Maintain the state of the score after refreshing the browser (optional)
+- Bonus: Play Rock, Paper, Scissors, Lizard, Spock against the computer (optional)
+### Learning Outcomes
+Your challenge is to build out this Rock, Paper, Scissors game and get it looking as close to the design as possible.
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
