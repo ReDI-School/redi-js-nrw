@@ -14,7 +14,8 @@ Your users should be able to:
   - The email address is not formatted correctly
 
 ### Learning Outcomes
-Your major takeaways from this challenge will be related to CSS and layout. If you haven't done so by now, you might want to try out a pre-processor, like Sass, to help keep your code maintainable.
+- Your challenge is to build out this landing page and get it looking as close to the design as possible.
+- You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
 ## 2 Job listings with filtering
 Level: 3 INTERMEDIATE </br>
@@ -28,7 +29,8 @@ Your users should be able to:
 - See hover states for all interactive elements on the page
 - Filter job listings based on the categories selected
 ### Learning Outcomes
-You'll learn how to use JavaScript to filter items in the DOM. This is a key skill when building client-side applications, so this challenge will be great practice!
+- Your challenge is to build out this landing page and get it looking as close to the design as possible.
+- You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
 ## 3 Expenses chart component
 Level: 2 JUNIOR</br>
@@ -42,9 +44,8 @@ Your users should be able to:
 - See hover states for all interactive elements on the page
 - Bonus: See dynamically generated bars based on the data provided in the local JSON file
 ### Learning Outcomes
-Your challenge is to build out this bar chart component and get it looking as close to the design as possible.
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-We provide the data for the chart in a local data.json file. So you can use that to add the bars dynamically if you choose.
+- Your challenge is to build out this bar chart component and get it looking as close to the design as possible.
+- You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
 ## 4 Interactive card details form
 Level: 2 JUNIOR</br>
@@ -59,8 +60,8 @@ Your users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover, active, and focus states for interactive elements on the page
 ### Learning Outcomes
-Your challenge is to build out this interactive card details form and get it looking as close to the design as possible.
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+- Your challenge is to build out this interactive card details form and get it looking as close to the design as possible.
+- You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
 ## 5 Interactive rating component
 Level: 1 NEWBIE </br>
@@ -72,8 +73,8 @@ Your users should be able to:
 - See the "Thank you" card state after submitting a rating
 - See hover and focus states for all interactive elements on the page
 ### Learning Outcomes
-Your challenge is to build out this interactive rating component and get it looking as close to the design as possible.
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+- Your challenge is to build out this interactive rating component and get it looking as close to the design as possible.
+- You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
 ## 6 Interactive comments section
 Level: 3 INTERMEDIATE </br>
@@ -88,8 +89,8 @@ Your users should be able to:
 - Bonus: If you're building a purely front-end project, use localStorage to save the current state in the browser that persists when the browser is refreshed
 - Bonus: Build this project as a full-stack application
 ### Learning Outcomes
-Your challenge is to build out this interactive comments section and get it looking as close to the design as possible.
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+- Your challenge is to build out this interactive comments section and get it looking as close to the design as possible.
+- You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
 ## 7 E-commerce product page
 Level: 3 INTERMEDIATE </br>
@@ -104,8 +105,8 @@ Your users should be able to:
 - Add items to the cart
 - View the cart and remove items from it
 ### Learning Outcomes
-Your challenge is to build out this interactive comments section and get it looking as close to the design as possible.
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+- Your challenge is to build out this interactive comments section and get it looking as close to the design as possible.
+- You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
 ## 8 Tip calculator app
 Level: 2 JUNIOR </br>
@@ -117,8 +118,8 @@ Your users should be able to:
 - See hover states for all interactive elements on the page
 - Calculate the correct tip and total cost of the bill per person
 ### Learning Outcomes
-Your challenge is to build out this tip calculator app and get it looking as close to the design as possible.
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+- Your challenge is to build out this tip calculator app and get it looking as close to the design as possible.
+- You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
 ## 9 Launch countdown timer
 Level: 3 INTERMEDIATE </br>
@@ -130,8 +131,8 @@ Your users should be able to:
 - See a live countdown timer that ticks down every second
 - Bonus: When a number changes, make the card flip from the middle
 ### Learning Outcomes
-Your challenge is to build out this tip calculator app and get it looking as close to the design as possible.
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+- Your challenge is to build out this tip calculator app and get it looking as close to the design as possible.
+- You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
 ## 10 Rock, Paper, Scissors game
 Level: 3 ADVANCED</br>
@@ -144,5 +145,5 @@ Your users should be able to:
 - Maintain the state of the score after refreshing the browser (optional)
 - Bonus: Play Rock, Paper, Scissors, Lizard, Spock against the computer (optional)
 ### Learning Outcomes
-Your challenge is to build out this Rock, Paper, Scissors game and get it looking as close to the design as possible.
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+- Your challenge is to build out this Rock, Paper, Scissors game and get it looking as close to the design as possible.
+- You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
