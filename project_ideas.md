@@ -120,7 +120,7 @@ Your users should be able to:
 Your challenge is to build out this tip calculator app and get it looking as close to the design as possible.
 You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
-## 9 Tip calculator app
+## 9 Launch countdown timer
 Level: 3 INTERMEDIATE </br>
 https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz- </br>
 This will be a fun one! Your challenge is to build this countdown timer. There are lots of small CSS tests in the design as well. So it should keep you busy!
