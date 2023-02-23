@@ -1,5 +1,5 @@
 # Project
-Project examples from [Frontendmentor](https://dev.to/frontendmentor/16-front-end-projects-with-designs-to-help-improve-your-coding-skills-5ajl)
+Project examples from [Frontendmentor](https://www.frontendmentor.io/challenges)
 ## 1 Manage landing page
 Level: 3 INTERMEDIATE </br>
 https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5 </br>
