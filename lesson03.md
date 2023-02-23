@@ -6,7 +6,7 @@ Lesson 3: If statement, Loops, Arrays
 
 ---
 
-### Homework solution
+### Practice solution
 
 ```js
 let hatPrice = 3.99;
