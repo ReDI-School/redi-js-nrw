@@ -69,21 +69,6 @@ Answer: Error, "temperature" is not available <!-- .element: class="fragment" --
 
 ---
 
-### What is programming?
-
-<!-- .slide: style="font-size:70%" -->
-
-Programming involves knowing and doing the following things:
-* input: Get data from the keyboard, a file, a sensor, or some other device.
-* output: Display data on the screen, or send data to a file or other device.
-* math: Perform basic mathematical operations like addition and division.
-* **decisions**: Check for certain conditions and execute the appropriate code.
-* repetition: Perform some action repeatedly, usually with some variation.
-
-(Source: http://greenteapress.com/thinkpython/thinkpython.pdf, Page 3)
-
----
-
 ### If statement
 
 * Up until now, we wrote code line by line
