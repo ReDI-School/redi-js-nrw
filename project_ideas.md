@@ -2,7 +2,7 @@
 Project examples from [Frontendmentor](https://www.frontendmentor.io/challenges)
 
 ## 1. Tip calculator app
-Level: 2 JUNIOR </br>
+*Level: 2 JUNIOR* </br>
 https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX </br>
 This small app is perfect for anyone starting to get to grips with JavaScript. The calculator functionality will be a nice test!
 ### Brief
@@ -15,7 +15,7 @@ Your users should be able to:
 - Calculate the correct tip and total cost of the bill per person
 
 ## 2. Interactive rating component
-Level: 1 NEWBIE </br>
+*Level: 1 NEWBIE* </br>
 https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI </br>
 This is a nice, small project to practice handling user interactions and updating the DOM. Perfect for anyone who has learned the basics of JavaScript!
 ### Brief
@@ -28,7 +28,7 @@ Your users should be able to:
 - See hover and focus states for all interactive elements on the page
 
 ## 3. Expenses chart component
-Level: 2 JUNIOR</br>
+*Level: 2 JUNIOR* </br>
 https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt </br>
 In this challenge, you'll create a bar chart component from scratch. We provide a local JSON file, so you can add the chart data dynamically if you choose.
 ### Brief
@@ -43,7 +43,7 @@ Your users should be able to:
 - Bonus: See dynamically generated bars based on the data provided in the local JSON file
 
 ## 4. Interactive card details form
-Level: 2 JUNIOR</br>
+*Level: 2 JUNIOR* </br>
 https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw </br>
 This fun project will be an excellent way to practice DOM manipulation and form validation while also putting your HTML and CSS skills to the test.
 ### Brief
@@ -59,7 +59,7 @@ Your users should be able to:
 - See hover, active, and focus states for interactive elements on the page
 
 ## 5. Manage landing page
-Level: 3 INTERMEDIATE </br>
+*Level: 3 INTERMEDIATE* </br>
 https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5 </br>
 This challenge will be a great test for your responsive skills. There are lots of small details and slight content shifts for different screen sizes.
 ### Brief
@@ -75,7 +75,7 @@ Your users should be able to:
   - The email address is not formatted correctly
 
 ## 6. Job listings with filtering
-Level: 3 INTERMEDIATE </br>
+*Level: 3 INTERMEDIATE* </br>
 https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt </br>
 Now that you've got a bit more comfortable with JavaScript, let's practice some filtering. In this challenge, you'll need to filter the job listings by the categories selected. There are two options to choose from for how to approach it:
 - *Option 1:* Filter job listings based on the categories using the HTML data- attribute. In this option, you'd use the hardcoded content that already exists in the index.html file.
@@ -90,7 +90,7 @@ Your users should be able to:
 - Filter job listings based on the categories selected
 
 ## 7. Interactive comments section
-Level: 3 INTERMEDIATE </br>
+*Level: 3 INTERMEDIATE* </br>
 https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9 </br>
 This is project will put your JavaScript skills to the test. We provide a JSON file to pull the data, but it's also a perfect project to build as a full-stack CRUD app!
 ### Brief
@@ -106,7 +106,7 @@ Your users should be able to:
 - Bonus: Build this project as a full-stack application
 
 ## 8. E-commerce product page
-Level: 3 INTERMEDIATE </br>
+*Level: 3 INTERMEDIATE* </br>
 https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6 </br>
 In this challenge, you'll build a beautiful product page. We'll be putting your JS skills to the test with a lightbox product gallery and cart functionality!
 ### Brief
@@ -122,7 +122,7 @@ Your users should be able to:
 - View the cart and remove items from it
 
 ## 9. Launch countdown timer
-Level: 3 INTERMEDIATE </br>
+*Level: 3 INTERMEDIATE* </br>
 https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz- </br>
 This will be a fun one! Your challenge is to build this countdown timer. There are lots of small CSS tests in the design as well. So it should keep you busy!
 ### Brief
@@ -135,7 +135,7 @@ Your users should be able to:
 - Bonus: When a number changes, make the card flip from the middle
 
 ## 10. Rock, Paper, Scissors game
-Level: 3 ADVANCED</br>
+*Level: 3 ADVANCED* </br>
 https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH </br>
 This challenge will test your HTML, CSS and JavaScript skills. There's even a Rock, Paper, Scissors, Lizard, Spock version if you really want to challenge yourself.
 ### Brief
