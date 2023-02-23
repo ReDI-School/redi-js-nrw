@@ -2,7 +2,7 @@
 
 # JavaScript
 
-Lesson 6: DOM
+Lesson 6 & 7: DOM
 
 ---
 

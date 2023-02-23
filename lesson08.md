@@ -1,515 +1,459 @@
-<!-- .slide: id="lesson8" -->
+<!-- .slide: id="lesson7" -->
 
 # JavaScript
 
-Lesson 8: Web APIs
+Lesson 8: Callbacks
 
 ---
 
-### Recap: loops
-
-What are loops?
-
-*repeatedly run a block of code - until a certain condition is met.*
-<!-- .element: class="fragment" -->
-
----
-
-What kind of loops did we talk about?
-
-* while loop
-<!-- .element: class="fragment" data-fragment-index="1" -->
-* for loop
-<!-- .element: class="fragment" data-fragment-index="1" -->
-
----
-
-How does a while loop look like?
+### Recap: Types
 
 ```js
-while (condition){
-  // code
+// Strings
+let name = "Owen";
+
+// Numbers
+let age = 28;
+
+// Booleans
+let isProgrammer = true;
+```
+
+---
+
+### Recap - Datatypes
+
+```js
+let a1 = 42;
+let a2 = true;
+let a3 = "hello";
+let a4 = function() {};
+let a5;
+let a6 = [];
+let a7 = {};
+```
+
+---
+
+### Solution - Datatypes
+
+```js
+let a1 = 42;       // number
+let a2 = true;     // boolean
+let a3 = "hello";  // string
+let a4 = function() {};  // function
+let a5;            // undefined
+let a6 = [];       // object (array)
+let a7 = {};       // object
+```
+
+---
+
+### Null
+
+* There's one datatype that we haven't learned about yet: `null`
+* `null` is like `undefined`. It indicates the absence of a value.
+* `null` can be used to indicate an *intentional* abscence of an object value.
+* Example: `document.getElementById("NoExist");` returns `null`
+
+---
+
+## A glimpse of JavaScript + HTML
+
+---
+
+### My first interactive Webpage!
+
+* Create a new folder
+* Create a html file `index.html`:
+
+```html
+<html>
+<body>
+   <script src="main.js"></script>
+</body>
+</html>
+```
+
+* Create a JS file `main.js`:
+
+```js
+console.log("Hello from JavaScript");
+```
+
+---
+
+### onclick
+
+* HTML elements have an [`onclick`](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick) attribute that executes JavaScript code, e.g.:
+
+```html
+<button onclick="let x = 1; x++; console.log(x);">
+Click me!
+</button>
+```
+
+---
+
+### onclick
+
+* Writing source code in HTML is not so great.
+* What did we learn so far so we can write code in JavaScript, but only execute it when a button is clicked?
+* Functions! <!-- .element: class="fragment" -->
+
+---
+
+### onclick
+
+Let's add a new function to our JavaScript file:
+
+```js
+function onButtonClick() {
+    console.log("Button has been clicked!");
 }
 ```
-<!-- .element: class="fragment"  -->
+
+So how can we call our function every time our button gets clicked?
 
 ---
 
+### onclick
 
-How does a while loop work?
+JavaScript:
+
 ```js
-while (condition){
-  // code
+function onButtonClick() {
+    console.log("Button has been clicked!");
 }
 ```
 
-1. check `condition`
-  * if it is `false`, STOP!
-  * if it is `true`:
-1. execute the code in the block `{ ... }`
-1. go to `1.`
+HTML:
 
----
-
-How does a for loop look like?
-
-```js
-for (init; condition; update) {
-  // code
-}
+```html
+<button onclick="onButtonClick()">
 ```
-<!-- .element: class="fragment"  -->
 
+Try it - click your button, does it output something?
 
 ---
 
-How does a for loop work?
+### onclick
+
+Let's do something with our HTML page when the button is clicked:
+
 ```js
-for (init; condition; update) {
-  // code
+function onButtonClick() {
+   document.body.style.backgroundColor = 'red';
 }
 ```
 
-1. execute `init`
-2. check `condition`
-  * if it is `false`, STOP!
-  * if it is `true`:
-3. execute the code in the block `{ ... }`
-4. execute `update`
-5. go to `2.`
+* What happens when you click your button?
+* What is `document.body.style.backgroundColor`?
+* Answer: It's a variable defined by the browser that contains the current background color. <!-- .element: class="fragment" -->
 
 ---
 
-Loops are very powerful in combination with *Arrays*!
+###  Exercise
+
+Can you make this in HTML and CSS? Don't worry about making it move, just make sure the elements are on top of one another (click on the cover!).
+<div style="position: relative;width: 150px;height: 100px">
+  <div style="display: flex;justify-content: center;align-items: center;text-align: center;position: absolute;top: 0px;left: 0px;width: 100%;height: 100%; outline: 1px solid black">My Layer</div>
+  <div style="display: flex;justify-content: center;align-items: center;text-align: center;position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;background-color:#FFAB40; cursor: pointer" onclick="const str = this.style.left == '100%' ? '0px' : '100%'; this.style.left = str;">My Cover</div>
+
+</div>
 
 ---
 
-### Recap: arrays
+### solution
 
-Arrays are **ordered** containers that holds multiple values.
-
-How do we create an array?
-
-```js
-let cars = ["Saab", "Volvo", "BMW"];
-
-// we create an array using []
-let emptyArray = [];
-
-// we put the values we want in square brackets
-// separated by commas
-let ages = [19, 33, 25, 40];
-```
-<!-- .element: class="fragment"  -->
-
-
----
-
-
-We can access elements in the array by number using square brackets "`[]`"
-
-The numbering starts at `0`, and the last element always has the number: `(array.length - 1)`.
-
-
-```js
-let books = ["Harry Potter", "The Hobbit", "Game of Thrones"];
-
-console.log(books[0]); // "Harry Potter"
-console.log(books[books.length - 1]); // "Game of Thrones"
+```html
+<div class="card">
+  <div class="fillParent layer">My Layer</div>
+  <div class="fillParent cover">My Cover</div>
+</div>
 ```
 
----
-
-
-We can use loops to go through elements of an array.
-
-```js
-let cars = ["Saab", "Volvo", "BMW"];
-
-for (let i = 0; i < cars.length; i++) {
-    console.log(cars[i]);
+```css
+.card {
+  position: relative;
+  width: 150px;
+  height: 100px;
 }
 
-// we can also change the values in the array
-cars[1] = "Fiat";
+.fillParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
-// and add additional items at the end of the array
-cars.push("Honda");
+.layer {
+  outline: 1px solid black;
+}
 
+.cover {
+  background-color: #FFAB40;
+}
 ```
+<!-- .slide: style="font-size:68%" -->
 
 ---
 
-### exercise
+### solution 2
+if you want to center the text in the boxes, use this:
 
-You have written a program that tells you how likely it is to rain outside (in percent %).
-
-Unfortunately, it is not very accurate, it sometimes gives you more than 100% or less that 0%.
-
-These are the values you got:
-```js
-[55.1, 45.6, 145.01, 10, -0.5, 0.001, 110, -0.001]
-```
-Write some code that replaces all values less than 0 with 0, and bigger than 100 with 100.
-
----
-
-### exercise: part 1
-
-write a function called "introduce" that takes a name and an age.
-
-the function should log to the console: "My name is **{name}**, I am **{age}** years old"
-
-
----
-
-### exercise: part 2
-
-You have the following information about your friends:
-
-```js
-let names = ['John Carmack', 'Frances Northcutt', 'John Nash'];
-let ages = [23, 25, 66];
-```
-
-write a loop that uses the function from before to output the introduction for everyone of them.
-
----
-
-The name of a person and the age of a person belong together; it feels very ugly to solve the problem using two separate arrays.
-
-Today we are going to talk about a new type that will solve this exact problem!
-
----
-
-### Recap - DOM
-
-* DOM is an API
-* It allows us to add/remove/change any element of a web page
-* We can make TODO lists, games and cool CSS animations
-* But how would we create a web page with "dynamic" data, for example today's weather?
-
----
-
-# Web APIs
-
----
-
-### Basic building blocks
-
-We need to first learn about a few concepts:
-
-1. JSON - How to exchange data
-1. REST API - How to talk with a server
-1. `fetch` API - How to connect to a server
-
----
-
-### Object notation
-
-* In JavaScript, we can put all keys of objects in quotes. This is purely optional:
-
-```js
-let me = {
-    "name": "John",
-    lastName: "Doe",
-    "hobbies": [ "Eat", "Sleep" ]
-};
-
-console.log(me.name); // "John"
-```
-
----
-
-### JSON
-
-* JSON stands for **J**ava**S**cript **O**bject **N**otation
-* It is a string representation of a JavaScript object
-* All *keys* in our key value pairs must be in quotes
-* Must contain only these types:
-   * `string`, `number`, `boolean`, `array`
-   * `null`
-   * another JSON `object`
-* These types are **forbidden**:
-   * `function`, `undefined`
-
----
-
-### Why JSON?
-
-* When we exchange data between a browser and a server, the data can only be text
-* JSON is text
-* JSON can be easily transferred (and stored)
-* The notation is very close to JavaScript objects, easy to handle from JavaScript. No complex parsing required.
-* More info: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON
-
----
-
-### JSON example
-
-```json
-{
-    "name": "Bob",
-    "instructor": true,
-    "hobbies": [ "eat", "sleep" ],
-    "age": 86,
-    "workAddress": {
-        "street": "Invalidenstraße",
-        "number": 116,
-        "city": "Berlin"
-    }
+```css
+.fillParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 ```
 
 ---
 
-### object <-> JSON
 
-JavaScript offers us an API to convert an object to JSON and vice versa:
+### Css Classes with JavaScript
+
+Just like we can set the text with JavaScript, we can also change the css classes:
 
 ```js
-let obj = {
-    name: "Bob",
-    instructor: true
-};
+let myDiv = document.createElement('div');
+// <div></div>
 
-// turn our object to JSON:
-let json = JSON.stringify(obj);
+myDiv.classList.add('firstClass');
+// <div class='firstClass'></div>
 
-// turn our JSON back to an object:
-let jsonAsObj = JSON.parse(json);
+myDiv.classList.add('secondClass');
+// <div class='firstClass secondClass'></div>
+
+myDiv.classList.remove('firstClass');
+// <div class='secondClass'></div>
 ```
 
 ---
 
-### Quiz
+### Exercise
 
-* What does the following output?
+Can you create this with JavaScript?
+create a function called *`createLayerDiv`* that returns the following element:
 
-```js
-typeof JSON.stringify({ name: "Bob" });
-typeof JSON.parse('{"city":"Berlin"}');
+```html
+<div class="fillParent layer">My Layer</div>
 ```
-
----
-
-### Quiz - answer
-
-```js
-typeof JSON.stringify({ name: "Bob" }); // "string"
-typeof JSON.parse('{"city":"Berlin"}'); // "object"
-```
-
----
-
-### Recap - API
-
-* API stands for **A**pplication **P**rogramming **I**nterface
-* It is the *contract* between your application and the server
-
-![API](images/API.png) <!-- .element height="400px" width="400px" -->
-
----
-
-### REST API
-
-* REST stands for **Re**presentational **S**tate **T**ransfer
-* REST APIs work via http(s), the same protocol we use to connect to any website
-* REST APIs commonly use JSON to exchange data
-* Example for a REST API call: https://restcountries.eu/rest/v2/lang/de
-* More info: https://developer.mozilla.org/en-US/docs/Glossary/REST
-
----
-
-### What is missing?
-
-* Now we know how to **talk** to a server: REST API
-* Now we know how to **exchange** data with a server: JSON
-* But how do we **connect** to the server from within JavaScript?
-
----
-
-### The dark past: XMLHttpRequest
-
-```js
-let url = 'https://something.com/';
-
-function load(url, callback) {
- let xhr = new XMLHttpRequest();
-
- xhr.onreadystatechange = function() {
-   if (xhr.readyState === 4) {
-     callback(xhr.response);
-   }
- }
-
- xhr.open('GET', url, true);
- xhr.send(null);
-}
-```
-
----
-
-### fetch - Promises
-
-```js
-fetch("http://something.com").then(function(response) {
-    return response.json();
-  }).then(function(json) {
-    console.log("got json: " + json);
-  });
-```
-
----
-
-### fetch - async/await
-
-```js
-async function fetchMyApi() {
-  let response = await fetch("http://something.com");
-  let result = await response.json();
-  console.log(result);
-}
-```
-
----
-
-### async/await
-
-* Fetching data from the internet might take a lot of time
-* We must not block our browser while waiting for the reply!
-* `XMLHttpRequest` was working with callbacks. The API is ugly, error-prone and difficult to use
-* `fetch` with promises is a bit better, but still complex to use
-* `fetch` with `await/async` is the cleanest, easiest
-
----
-
-### async/await
-
-* JavaScript introduced two new keywords: `async` and `await`
-* We can use the `await` keyword only in `async` functions!
-* `await` executes the call, continues executing the code which comes after the `async` function
-* once the result of the `await` is available, the code in the `async` function resumes
-* This allows us to execute long-running functions without blocking the browser
-
----
-
-### Full fetch example
-
-```js
-async function fetchMyApi() {
-  // connects to something.com
-  let response = await fetch("http://something.com");
-  // "downloads" the resource, converts the JSON for us.
-  // We don't need to call JSON.parse()!
-  let result = await response.json();
-  console.log(result);
-}
-
-fetchMyApi();
-console.log("after calling fetchMyApi()");
-```
-
----
-
-### Recap: Quiz
-
-1. Quiz sample URL: https://opentdb.com/api.php?amount=10&category=18&difficulty=medium&type=multiple
-1. Were you able to download that URL from within JavaScript?
-1. Were you able to read/explain the response?
-1. Were you able to extract the relevant data from the response?
-1. Were you able to render that data in HTML?
-1. Were you able to add the logic of shuffling / state management?
-
----
-
-### Let's play
-
-* Open the following URL in your browser:
-* https://dog.ceo/api/breeds/image/random
-* Describe the output
-
----
-
-### Now, from JavaScript
-
-```js
-async function fetchDog() {
-  let response = await fetch("https://dog.ceo/api/breeds/image/random");
-  let result = await response.json();
-  console.log(result);
-}
-fetchDog();
-```
-
-* Create a `<img>` element, set its `src` attribute to the message you got from `dog.ceo` and append it to `document.body`!  
 
 ---
 
 ### Solution
 
 ```js
-async function fetchDog() {
-  let response = await fetch("https://dog.ceo/api/breeds/image/random");
-  let result = await response.json();
-  let image = document.createElement("img");
-  image.src = result.message;
-  document.body.appendChild(image);
+function createLayerDiv(){
+  let layer = document.createElement('div');
+  layer.classList.add('fillParent');
+  layer.classList.add('layer');
+  layer.textContent = 'My Layer';
+  return layer;
 }
-fetchDog();
 ```
 
 ---
 
-### Leaflet
+### Exercise
 
-* Let's add some more bling to our leaflet.
-* Can you `fetch` the URL below and check the output?
+Can you create this with JavaScript?
+create a function called *`createCoverDiv`* that returns the following element:
+
+```html
+<div class="fillParent cover">My Cover</div>
+```
+
+---
+
+### Solution
 
 ```js
-    let apiKey = 'XXX'; // check slack channel
-    let url = "https://places.ls.hereapi.com/places/v1/autosuggest?at=52.531587,13.384742&q=cafe&apiKey=" + apiKey;
+function createCoverDiv(){
+  let cover = document.createElement('div');
+  cover.classList.add('fillParent');
+  cover.classList.add('cover');
+  cover.textContent = 'My Cover';
+  return cover;
+}
 ```
 
 ---
 
-### Search reply
+### Exercise
 
-* We're getting a JSON object with one property called `result`
-* The type of `result` is an array.
+create this card in JavaScript, use the functions you created before!
+
+```html
+<div class="card">
+  <div class="fillParent layer">My Layer</div>
+  <div class="fillParent cover">My Cover</div>
+</div>
+```
+
+---
+
+
+### Solution
 
 ```js
-    let response = await fetch(url);
-    let reply = await response.json();
-    for (let result of reply.resulsts) {
-        // ...
-    }
+function createCardDiv() {
+  let card = document.createElement('div');
+  card.classList.add('card');
+
+  let layer = createLayerDiv();
+  card.appendChild(layer);
+
+  let cover = createCoverDiv();
+  card.appendChild(cover);
+  return card;
+}
 ```
 
 ---
 
-### Result
 
-* Every result has a couple of properties
-* `position` looks interesting - it has the lat/lon coordinate
-* `title` contains the name of the place
-* Can you create one marker on our map for every result?
+### Exercise
 
----
+Finally! add the following HTML to your page and use the function created before to add a card to this element:
 
-### Bonus
-
-* Add a button called "search" that searches around the currently visible area for cafes
-* Add an input field that lets the user specify other search terms than "cafe"
-* Note - Use `encodeURIComponent` to escape the user input
+```html
+<div id="wordList"><div>
+```
 
 ---
 
-### Homework
+### solution
 
-* Use the free API from https://restcountries.eu
-* Example API call:
-   * https://restcountries.eu/rest/v2/name/germany
-* Look at the result
-* Use the `fetch` API to fetch the JSON. Can you show the name, capital, population and the flag on your web page?
-* BONUS: Add an `<input>` field where the user can enter a country name, then show details about that country
+```js
+let list = document.getElementById('wordList');
+let card = createCardDiv();
+list.appendChild(card);
+```
+
+You should get something like this:
+<div style="position: relative;width: 150px;height: 100px">
+  <div style="display: flex;justify-content: center;align-items: center;text-align: center;position: absolute;top: 0px;left: 0px;width: 100%;height: 100%; outline: 1px solid black">My Layer</div>
+  <div style="display: flex;justify-content: center;align-items: center;text-align: center;position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;background-color:#FFAB40; cursor: pointer" onclick="const str = this.style.left == '100%' ? '0px' : '100%'; this.style.left = str;">My Cover</div>
+
+</div>
+
+---
+
+### Exercise
+
+When we click on the cover, we want it to move to the right, you can use the `left` property to do that:
+```js
+// this will move the cover to the right
+//until it reaches the edge of the card
+cover.style.left = '100%';
+```
+
+---
+
+### solution
+
+```js
+cover.onclick = function() {
+  cover.style.left = '100%';
+}
+```
+
+---
+
+### Exercise
+
+We want the cover to go back to its original position when we click on it again.
+
+
+---
+
+### solution
+
+```js
+cover.onclick = function() {
+  if (cover.style.left === '100%'){
+    cover.style.left = '0';
+  } else {
+    cover.style.left = '100%';
+  }
+}
+```
+
+---
+
+### Homework - Part 1
+
+Make the divs customizable, we should be able to call the function like this:
+
+```js
+let options = {
+  layerText: 'new Layer Text',
+  coverText: 'new Cover Text',
+  coverBackgroundColor: '#FFAB40'
+};
+let card = createCardDiv(options);
+```
+This should change the text in the layer and the cover, as well as the background color of the cover.
+
+---
+
+### Homework - Part 2
+
+Copy this data to your JavaScript file:
+```js
+let words = [{
+  word: 'Little',
+  description: 'Small in size.',
+  color: '#FF4081'
+}, {
+  word: 'Simple',
+  description: 'Easily understood or done.',
+  color: '#FF5252'
+}, {
+  word: 'Malicious',
+  description: 'Intending to do harm.',
+  color: '#FF6E40'
+}, {
+  word: 'Necessary',
+  description: 'Needed to be done.',
+  color: '#FFAB40'
+}, {
+  word: 'Standard',
+  description: 'Regularly and widely used.',
+  color: '#FFD740'
+}];
+```
+
+---
+
+### Homework - Part 3
+
+Can you use the data you just copied to make a card for each word?
+
+---
+
+### Homework - Part 4
+
+<!-- .slide: style="font-size:70%" -->
+
+Let's make a color changing webpage.
+
+* Add three buttons to your HTML
+* Set their text to "red", "green" and "blue"
+* When a button is clicked, set the background to that color
+  * Example: "green" button sets the `backgroundColor` to "green".
+* BONUS: When the button is clicked a second time, set the color to its light version.
+  * Example: Blue is clicked and the background is blue, set `backgroundColor` to "lightBlue".
+* BONUS2: Add a new button with text "dark" that changes the current color to its dark variant.
+  * Example: The page is currently `red` or `lightRed`, change it to `darkRed`
