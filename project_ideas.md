@@ -12,6 +12,7 @@ Your users should be able to:
 - Receive an error message when the newsletter sign-up form is submitted if:
 -- The input field is empty
 -- The email address is not formatted correctly
+
 ### Learning Outcomes
 Your major takeaways from this challenge will be related to CSS and layout. If you haven't done so by now, you might want to try out a pre-processor, like Sass, to help keep your code maintainable.
 
@@ -53,8 +54,8 @@ This fun project will be an excellent way to practice DOM manipulation and form 
 Your users should be able to:
 - Fill in the form and see the card details update in real-time
 - Receive error messages when the form is submitted if:
-- Any input field is empty
-- The card number, expiry date, or CVC fields are in the wrong format
+-- Any input field is empty
+-- The card number, expiry date, or CVC fields are in the wrong format
 - View the optimal layout depending on their device's screen size
 - See hover, active, and focus states for interactive elements on the page
 ### Learning Outcomes
