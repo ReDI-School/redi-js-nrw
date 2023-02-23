@@ -1,6 +1,7 @@
 # Project
 Project examples from [Frontendmentor](https://dev.to/frontendmentor/16-front-end-projects-with-designs-to-help-improve-your-coding-skills-5ajl)
 ## 1 Manage landing page
+Level: 3 INTERMEDIATE </br>
 https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5 </br>
 This landing page will give your CSS skills a nice test. There are some background patterns that need to be positioned accurately and some little details in the switch from desktop to mobile. There are also a few areas that will require some JS.
 ### Brief
@@ -15,6 +16,7 @@ Your users should be able to:
 Your major takeaways from this challenge will be related to CSS and layout. If you haven't done so by now, you might want to try out a pre-processor, like Sass, to help keep your code maintainable.
 
 ## 2 Job listings with filtering
+Level: 3 INTERMEDIATE </br>
 https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt </br>
 Now that you've got a bit more comfortable with JavaScript, let's practice some filtering. In this challenge, you'll need to filter the job listings by the categories selected. There are two options to choose from for how to approach it:
 - *Option 1:* Filter job listings based on the categories using the HTML data- attribute. In this option, you'd use the hardcoded content that already exists in the index.html file.
@@ -26,6 +28,22 @@ Your users should be able to:
 - Filter job listings based on the categories selected
 ### Learning Outcomes
 You'll learn how to use JavaScript to filter items in the DOM. This is a key skill when building client-side applications, so this challenge will be great practice!
+
+## 3 Expenses chart component
+Level: 2 JUNIOR</br>
+https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt </br>
+In this challenge, you'll create a bar chart component from scratch. We provide a local JSON file, so you can add the chart data dynamically if you choose.
+### Brief
+Your users should be able to:
+- View the bar chart and hover over the individual bars to see the correct amounts for each day
+- See the current day's bar highlighted in a different colour to the other bars
+- View the optimal layout for the content depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Bonus: See dynamically generated bars based on the data provided in the local JSON file
+### Learning Outcomes
+Your challenge is to build out this bar chart component and get it looking as close to the design as possible.
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+We provide the data for the chart in a local data.json file. So you can use that to add the bars dynamically if you choose.
 
 
 # Other project ideas
