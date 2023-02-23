@@ -485,18 +485,6 @@ console.log(person2.name) // "Johnny"
 
 ---
 
-### Things we did _not_ teach
-
-We did leave out a couple of statements and keywords that you might see in other JavaScript beginners courses:
-
-1. template strings
-1. `break`
-1. `continue`
-1. `switch` statement
-1. various operators
-
----
-
 ### Template strings
 
 Template strings start and end with a backtick and can contain JavaScript expressions in a `${}` block:
