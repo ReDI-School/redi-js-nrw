@@ -3,7 +3,7 @@ Project examples from [Frontendmentor](https://dev.to/frontendmentor/16-front-en
 ## 1 Manage landing page
 Level: 3 INTERMEDIATE </br>
 https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5 </br>
-This landing page will give your CSS skills a nice test. There are some background patterns that need to be positioned accurately and some little details in the switch from desktop to mobile. There are also a few areas that will require some JS.
+This challenge will be a great test for your responsive skills. There are lots of small details and slight content shifts for different screen sizes.
 ### Brief
 Your users should be able to:
 - View the optimal layout for the site depending on their device's screen size
