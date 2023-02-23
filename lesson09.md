@@ -463,7 +463,6 @@ fetchDog();
 
 ### Leaflet
 
-* Let's add some more bling to our leaflet.
 * Can you `fetch` the URL below and check the output?
 
 ```js
