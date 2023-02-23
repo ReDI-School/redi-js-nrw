@@ -1,6 +1,6 @@
 <!-- .slide: id="lesson9" -->
 
-# Basic Frontend
+# JavaScript
 
 Lesson 9: OOP
 

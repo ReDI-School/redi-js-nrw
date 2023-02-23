@@ -1,6 +1,6 @@
 <!-- .slide: id="lesson8" -->
 
-# Basic Frontend
+# JavaScript
 
 Lesson 8: Web APIs
 

@@ -1,6 +1,6 @@
 <!-- .slide: id="lesson10" -->
 
-# Basic Frontend
+# JavaScript
 
 Lesson 10: Libraries, LocalStorage
 

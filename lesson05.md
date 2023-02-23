@@ -1,6 +1,6 @@
 <!-- .slide: id="lesson5" -->
 
-# Basic Frontend
+# JavaScript
 
 Lesson 5: Objects
 

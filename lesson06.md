@@ -1,6 +1,6 @@
 <!-- .slide: id="lesson6" -->
 
-# Basic Frontend
+# JavaScript
 
 Lesson 6: DOM
 

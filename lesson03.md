@@ -1,6 +1,6 @@
 <!-- .slide: id="lesson3" -->
 
-# Basic Frontend
+# JavaScript
 
 Lesson 3: If statement, Loops, Arrays
 

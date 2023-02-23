@@ -1,6 +1,6 @@
 <!-- .slide: id="lesson2" -->
 
-# Basic Frontend
+# JavaScript
 
 Lesson 2: Variables, Console, Comments
 

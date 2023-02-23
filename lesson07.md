@@ -1,6 +1,6 @@
 <!-- .slide: id="lesson7" -->
 
-# Basic Frontend
+# JavaScript
 
 Lesson 7: Callbacks
 

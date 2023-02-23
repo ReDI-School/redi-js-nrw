@@ -1,6 +1,6 @@
 <!-- .slide: id="lesson4" -->
 
-# Basic Frontend
+# JavaScript
 
 Lesson 4: Functions
 

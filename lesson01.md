@@ -19,7 +19,7 @@ Direct link to lessons: [1](#lesson01), [2](#lesson02), [3](#lesson03), [4](#les
 
 <!-- .slide: id="lesson1" -->
 
-# Basic Frontend
+# JavaScript
 
 Lesson 1: Introduction, Basic Data Types, Operators
 
