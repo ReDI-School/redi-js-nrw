@@ -140,7 +140,7 @@ cars.push("Honda");
 
 ---
 
-### exercise
+### Exercise
 
 You have written a program that tells you how likely it is to rain outside (in percent %).
 
@@ -154,7 +154,7 @@ Write some code that replaces all values less than 0 with 0, and bigger than 100
 
 ---
 
-### exercise: part 1
+### Exercise: part 1
 
 write a function called "introduce" that takes a name and an age.
 
@@ -163,7 +163,7 @@ the function should log to the console: "My name is **{name}**, I am **{age}** y
 
 ---
 
-### exercise: part 2
+### Exercise: part 2
 
 You have the following information about your friends:
 
@@ -505,7 +505,7 @@ fetchDog();
 
 ---
 
-### Homework
+### Further Practices
 
 * Use the free API from https://restcountries.eu
 * Example API call:
