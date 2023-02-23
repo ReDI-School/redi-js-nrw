@@ -1,4 +1,4 @@
-# Project
+# Project examples
 Project examples from [Frontendmentor](https://www.frontendmentor.io/challenges)
 
 ## 1. Tip calculator app
