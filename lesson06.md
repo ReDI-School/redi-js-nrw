@@ -112,7 +112,7 @@ input.value = "world"; // changed the value of the input to "world"
 
 ---
 
-### Homework - DOM
+### Example
 
 * Create an empty HTML file. Add an `<input>`, a `<button>` and a `<div>`
 * Add a function to your JavaScript file
@@ -122,32 +122,7 @@ input.value = "world"; // changed the value of the input to "world"
 
 ---
 
-DOM defines:
-* the structure of (HTML) documents
-* *the way a document is accessed and manipulated*
-
----
-
-
-```html
-<input type="text" value="hello" />
-```
-How can I get this input element in JavaScript?
-
-```html
-<input type="text" value="hello" id="myInput" />
-```
-<!-- .element: class="fragment" -->
-
-```js
-let input = document.getElementById("myInput");
-input.value = "world";
-```
-<!-- .element: class="fragment" -->
-
----
-
-### Homework solution
+### Practice solution
 
 ```html
 <body>
@@ -169,6 +144,30 @@ function setBackground() {
 
 ---
 
+DOM defines:
+* the structure of (HTML) documents
+* *the way a document is accessed and manipulated*
+
+---
+
+```html
+<input type="text" value="hello" />
+```
+How can I get this input element in JavaScript?
+
+```html
+<input type="text" value="hello" id="myInput" />
+```
+<!-- .element: class="fragment" -->
+
+```js
+let input = document.getElementById("myInput");
+input.value = "world";
+```
+<!-- .element: class="fragment" -->
+
+---
+
 ### Exercise
 
 remove the value from the input field after the user presses the button.
@@ -176,7 +175,7 @@ remove the value from the input field after the user presses the button.
 
 ---
 
-### solution
+### Solution
 
 ```js
 function setBackground() {
@@ -210,7 +209,7 @@ Change the text content of the div to the color that the user choose!
 
 ---
 
-### solution
+### Solution
 
 ```js
 function setBackground() {
@@ -287,7 +286,7 @@ itemElement.textContent = color;
 
 ---
 
-### exercise
+### Exercise
 
 Change the background color of the item to the color!
 
@@ -298,7 +297,7 @@ itemElement.style.backgroundColor = color;
 
 ---
 
-### exercise
+### Exercise
 
 When we click on an item in our list, we want to change the background color of the div to that of the item.
 
@@ -312,7 +311,7 @@ itemElement.onclick = function () {
 
 ---
 
-### Quiz: DOM
+### Quiz
 
 What is the output? And why?
 
@@ -327,7 +326,7 @@ typeof document;
 
 ---
 
-### Quiz: DOM
+### Quiz
 
 How do we change the `value` of an `input` at runtime?
 
@@ -373,7 +372,7 @@ listElement.appendChild(itemElement);
 
 ---
 
-### DOM Exercise
+### Exercise
 
 1. Create the usual empty HTML and JavaScript file
 1. Remember to load your JavaScript file in the body using a `<script src=""></script>` tag
@@ -560,7 +559,7 @@ for (let i = 0; i < items.length; i++) {
 
 ---
 
-### Exercise
+### Further Practice
 
 * Can you add a button "Mark all done" that strikes through all your TODO items?
 * Hint: Use the `children` property of your `<ul>` element.
