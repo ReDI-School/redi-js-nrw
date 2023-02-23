@@ -450,7 +450,7 @@ The last one creates **global** variables. Those will be visible to everyone, yo
 
 ---
 
-### Recap - Preject
+### Quiz
 
 What's the difference?
 
@@ -475,7 +475,7 @@ Fist one asks for the `input` element every time the button is clicked, last one
 
 <!-- .slide: id="lesson4:homework1" -->
 
-### Homework - Optional - Part 1/2
+### Further Practice - Part 1/2
 
 Write a function that takes name of a person, their age, and the language they speak, and returns a string that introduces this person.
 
@@ -489,7 +489,7 @@ John, 18, English &#8594; **"Hello! my name is John, I am 18 years old and I spe
 
 <!-- .slide: id="lesson4:homework2" -->
 
-### Homework - Optional - Part 2/2
+### Further Practice - Part 2/2
 
 Change the employee solution from before, and turn it into a function.
 
