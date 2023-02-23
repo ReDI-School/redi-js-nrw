@@ -360,7 +360,7 @@ console.log('min of -10 and 0 is ' + min(-10, 0));
 
 ---
 
-### Recap - Preject
+### Quiz
 
 Which of the following will output `42`?
 
@@ -376,7 +376,7 @@ console.log(a);      // [4]
 
 ---
 
-### Recap - Preject
+### Quiz
 
 Which of the following will output `42`?
 
@@ -392,7 +392,7 @@ console.log(a);      // [4] ERROR
 
 ---
 
-### Recap - Preject
+### Quiz
 
 ```js
 function fun1() {
@@ -405,7 +405,7 @@ function fun2() {
 
 ---
 
-### Recap - Preject
+### Quiz
 
 ```js
 // move the variable outside the function
@@ -418,7 +418,7 @@ function fun2() {
 
 ---
 
-### Recap - Preject
+### Quiz
 
 What's the difference?
 
