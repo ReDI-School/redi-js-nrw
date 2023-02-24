@@ -1,20 +1,7 @@
 # Project examples
 Project examples from [Frontendmentor](https://www.frontendmentor.io/challenges)
 
-## 1. Tip calculator app
-*Level: 2 JUNIOR* </br>
-Detailed description: https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX </br>
-This small app is perfect for anyone starting to get to grips with JavaScript. The calculator functionality will be a nice test!
-### Brief
-- Your challenge is to build out this tip calculator app and get it looking as close to the design as possible.
-- You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-### Learning Outcomes
-Your users should be able to:
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Calculate the correct tip and total cost of the bill per person
-
-## 2. Interactive rating component
+## 1. Interactive rating component
 *Level: 1 NEWBIE* </br>
 Detailed description: https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI </br>
 This is a nice, small project to practice handling user interactions and updating the DOM. Perfect for anyone who has learned the basics of JavaScript!
@@ -27,7 +14,35 @@ Your users should be able to:
 - See the "Thank you" card state after submitting a rating
 - See hover and focus states for all interactive elements on the page
 
-## 3. Expenses chart component
+## 2. Intro component with sign-up form
+*Level: 1 NEWBIE* </br>
+Detailed description: https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1 </br>
+Practice building out a sign-up form complete with client-side validation using JavaScript.
+### Brief
+- Your challenge is to build out this landing page and get it looking as close to the design as possible.
+- You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+### Learning Outcomes
+Your users should be able to:
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Receive an error message when the form is submitted if:
+  - Any input field is empty
+  - The email address is not formatted correctly
+
+## 3. Tip calculator app
+*Level: 2 JUNIOR* </br>
+Detailed description: https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX </br>
+This small app is perfect for anyone starting to get to grips with JavaScript. The calculator functionality will be a nice test!
+### Brief
+- Your challenge is to build out this tip calculator app and get it looking as close to the design as possible.
+- You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+### Learning Outcomes
+Your users should be able to:
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Calculate the correct tip and total cost of the bill per person
+
+## 4. Expenses chart component
 *Level: 2 JUNIOR* </br>
 Detailed description: https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt </br>
 In this challenge, you'll create a bar chart component from scratch. We provide a local JSON file, so you can add the chart data dynamically if you choose.
@@ -42,7 +57,7 @@ Your users should be able to:
 - See hover states for all interactive elements on the page
 - Bonus: See dynamically generated bars based on the data provided in the local JSON file
 
-## 4. Interactive card details form
+## 5. Interactive card details form
 *Level: 2 JUNIOR* </br>
 Detailed description: https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw </br>
 This fun project will be an excellent way to practice DOM manipulation and form validation while also putting your HTML and CSS skills to the test.
@@ -57,21 +72,6 @@ Your users should be able to:
   - The card number, expiry date, or CVC fields are in the wrong format
 - View the optimal layout depending on their device's screen size
 - See hover, active, and focus states for interactive elements on the page
-
-## 5. Intro component with sign-up form
-*Level: 1 NEWBIE* </br>
-Detailed description: https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1 </br>
-Practice building out a sign-up form complete with client-side validation using JavaScript.
-### Brief
-- Your challenge is to build out this landing page and get it looking as close to the design as possible.
-- You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-### Learning Outcomes
-Your users should be able to:
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Receive an error message when the form is submitted if:
-  - Any input field is empty
-  - The email address is not formatted correctly
 
 ## 6. Job listings with filtering
 *Level: 3 INTERMEDIATE* </br>
