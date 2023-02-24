@@ -58,10 +58,10 @@ Your users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover, active, and focus states for interactive elements on the page
 
-## 5. Manage landing page
-*Level: 3 INTERMEDIATE* </br>
-Detailed description: https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5 </br>
-This challenge will be a great test for your responsive skills. There are lots of small details and slight content shifts for different screen sizes.
+## 5. Intro component with sign-up form
+*Level: 1 NEWBIE* </br>
+Detailed description: https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1 </br>
+Practice building out a sign-up form complete with client-side validation using JavaScript.
 ### Brief
 - Your challenge is to build out this landing page and get it looking as close to the design as possible.
 - You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
@@ -69,9 +69,8 @@ This challenge will be a great test for your responsive skills. There are lots o
 Your users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
-- See all testimonials in a horizontal slider
-- Receive an error message when the newsletter sign-up form is submitted if:
-  - The input field is empty
+- Receive an error message when the form is submitted if:
+  - Any input field is empty
   - The email address is not formatted correctly
 
 ## 6. Job listings with filtering
