@@ -273,6 +273,28 @@ console.log(numberSquared); // 25
 
 ---
 
+### Arrow Functions
+
+An arrow function is a concise and simple way of writing function in JavaScript without including the "function" keyword.
+
+To define an arrow function like this: 
+`const funcName = (param1, param2, ...) => expression`
+
+For instance:
+
+```js
+const sqaure = (x) => { 
+return x * x; 
+}
+```
+If the function is a single statement, we do not need a return statement, we can construct the function like this:
+
+```js
+const sqaure = (x) => x * x;
+```
+
+---
+
 ### Converting string to number
 
 What is the result?
