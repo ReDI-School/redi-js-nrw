@@ -736,7 +736,7 @@ for (let i = 0; i < cars.length; i++) {
 
 Destructuring means to break down a complex structure into simpler parts. With the syntax of destructuring, you can extract smaller fragments from objects and arrays. It can be used for assignments and declaration of a variable.
 
-## Example
+### Example
 
 ```js
 var arr = ["Hello", "World"]  
@@ -750,7 +750,7 @@ console.log(second); // World
 
 ---
 
-## Example 2
+### Example 2
 
 ```js
 var colors = ["Violet", "Indigo", "Blue", "Green", "Yellow", "Orange", "Red"];  
