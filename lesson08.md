@@ -2,7 +2,118 @@
 
 # JavaScript
 
-Lesson 8: Callbacks
+Lesson 8: Callbacks, Promises and Timer
+
+### Callbacks :
+
+A callback is a function passed as an argument to another function.
+
+Where callbacks really shine are in asynchronous functions, where one function has to wait for another function (like waiting for a file to load).
+
+Callbacks functions will be covered more in the next lessons. This lessson is a simplified introduction to understand the concept.
+
+---
+
+### Example 1 :
+
+```js
+function myDisplayer(text) {
+  document.getElementById("demo").innerHTML = text;
+}
+
+function myCalculator(num1, num2, myCallback) {
+  let sum = num1 + num2;
+  myCallback(sum);
+}
+
+myCalculator(5, 5, myDisplayer);
+```
+In the example above, myDisplayer is called a callback function.
+
+It is passed to myCalculator() as an argument
+
+---
+
+### Example 2 :
+
+
+```js
+// Create an Array
+let myNumbers = [4, 1, -20, -7, 5, 9, -6];
+
+// Call removeNeg with a callback
+let posNumbers = removeNeg(myNumbers, (x) => x >= 0);
+
+// Display Result
+document.getElementById("demo").innerHTML = posNumbers;
+
+// Keep only positive numbers
+function removeNeg(numbers, callback) {
+  const myArray = [];
+  for (const x of numbers) {
+    if (callback(x)) {
+      myArray.push(x);
+    }
+  }
+  return myArray;
+}
+```
+
+In the example above, (x) => x >= 0 is a callback function.
+
+It is passed to removeNeg() as an argument.
+
+---
+
+### Promises :
+
+A promise represents an operation that hasn't completed yet.
+
+### Example :
+
+```js
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
+
+// Promise syntax
+let myPromise = new Promise(function(myResolve, myReject) {
+  let x = 0;
+
+// some code try to change x to 5 (this may take some time like a web api call or file load)
+
+  if (x == 0) {
+    myResolve("OK");
+  } else {
+    myReject("Error");
+  }
+});
+
+myPromise.then(
+  function(value) {myDisplayer(value);},
+  function(error) {myDisplayer(error);}
+);
+```
+Promise.then() takes two arguments, a callback for success and another for failure.
+
+Both are optional, so you can add a callback for success or failure only.
+
+---
+
+### Timer :
+
+A timer is a function that enables us to execute a function at a particular time.
+
+### Example :
+
+```js
+function myFunction() {
+    alert('Hello World!');
+}
+
+setTimeout(myFunction, 2000)
+```
+myFunction will be executed after 2 seconds .
 
 ---
 
