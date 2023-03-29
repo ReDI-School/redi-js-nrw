@@ -732,6 +732,57 @@ for (let i = 0; i < cars.length; i++) {
 
 ---
 
+### Array destructuring
+
+Destructuring means to break down a complex structure into simpler parts. With the syntax of destructuring, you can extract smaller fragments from objects and arrays. It can be used for assignments and declaration of a variable.
+
+## Example
+
+```js
+var arr = ["Hello", "World"]  
+  
+// destructuring assignment  
+var [first, second] = arr;  
+  
+console.log(first); // Hello  
+console.log(second); // World  
+```
+
+---
+
+## Example 2
+
+```js
+var colors = ["Violet", "Indigo", "Blue", "Green", "Yellow", "Orange", "Red"];  
+  
+// destructuring assignment  
+var[color1, color2, color3] = colors;  
+  
+console.log(color1); // Violet  
+console.log(color2); // Indigo  
+console.log(color3); // Blue  
+```
+
+---
+
+If you want to choose random elements from the given array then in array destructuring you can perform it as follows:
+
+```js
+var colors = ["Violet", "Indigo", "Blue", "Green", "Yellow", "Orange", "Red"];  
+  
+// destructuring assignment  
+var[color1, ,color3, ,color5] = colors; //Leave space for unpick elements  
+console.log(color1); // Violet  
+console.log(color3); // Blue  
+console.log(color5); // Yellow   
+```
+
+In the above example, we have defined an array named colors which has seven elements. But we have to show three random colors from the given array that are Violet, Blue, and Yellow. These array elements are in positions 0, 2, and 4.
+
+During destructuring, you have to leave the space for unpick elements, as shown in the above example. Otherwise, you will get unintended results.
+
+---
+
 ### Exercise 2
 
 * Step 1: Create an array with your 3 top friends (you can use the same from exercise 1)
