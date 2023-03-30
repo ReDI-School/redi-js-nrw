@@ -17,7 +17,7 @@ Direct link to lessons: [1](#lesson01), [2](#lesson02), [3](#lesson03), [4](#les
 
 ---
 
-<!-- .slide: id="lesson1" -->
+<!-- .slide: id="lesson01" -->
 
 # JavaScript
 
