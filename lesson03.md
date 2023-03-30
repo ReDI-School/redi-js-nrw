@@ -1,5 +1,3 @@
----
-
 <!-- .slide: id="lesson03" -->
 
 # JavaScript
