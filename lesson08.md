@@ -1,4 +1,4 @@
-<!-- .slide: id="lesson7" -->
+<!-- .slide: id="lesson07" -->
 
 # JavaScript
 
