@@ -4,6 +4,8 @@
 
 Lesson 8: Callbacks, Promises and Timer
 
+---
+
 ### Callbacks :
 
 A callback is a function passed as an argument to another function.
