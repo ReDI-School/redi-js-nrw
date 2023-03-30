@@ -8,12 +8,12 @@
 1. [Functions](#lesson04)
 1. [Objects & More](#lesson05)
 1. [DOM](#lesson06)
-1. [Callbacks](#lesson08)
-1. [Web APIs](#lesson09)
-1. [OOP](#lesson10)
-1. [Libraries, LocalStorage](#lesson11)
+1. [Callbacks](#lesson07)
+1. [Web APIs](#lesson08)
+1. [OOP](#lesson09)
+1. [Libraries, LocalStorage](#lesson10)
 
-Direct link to lessons: [1](#lesson01), [2](#lesson02), [3](#lesson03), [4](#lesson04), [5](#lesson05), [6](#lesson06), [7](#lesson06), [8](#lesson08), [9](#lesson09), [10](#lesson10), [11](#lesson11)
+Direct link to lessons: [1](#lesson01), [2](#lesson02), [3](#lesson03), [4](#lesson04), [5](#lesson05), [6](#lesson06), [7](#lesson06), [8](#lesson07), [9](#lesson08), [10](#lesson09), [11](#lesson10)
 
 ---
 
