@@ -8,8 +8,6 @@ Lesson 6 & 7: DOM
 
 ---
 
-<!-- .slide: id="lesson9:DOM" -->
-
 # DOM
 
 ---
