@@ -1,6 +1,6 @@
 ---
 
-<!-- .slide: id="lesson02" -->
+<!-- .slide: id="lesson2" -->
 
 # JavaScript
 
