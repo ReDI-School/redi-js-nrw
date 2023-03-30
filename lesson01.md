@@ -13,7 +13,7 @@
 1. [OOP](#lesson09)
 1. [Libraries, LocalStorage](#lesson10)
 
-Direct link to lessons: [1](#lesson01), [2](#lesson02), [3](#lesson03), [4](#lesson04), [5](#lesson05), [6](#lesson06), [7](#lesson06), [8](#lesson07), [9](#lesson08), [10](#lesson09), [11](#lesson10)
+Direct link to lessons: [1](#lesson01), [2](#lesson02), [3](#lesson03), [4](#lesson04), [5](#lesson05), [6](#lesson06), [8](#lesson07), [9](#lesson08), [10](#lesson09), [11](#lesson10)
 
 ---
 
