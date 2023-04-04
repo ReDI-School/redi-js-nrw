@@ -576,6 +576,36 @@ Fun ideas:
 1. add a auto click timer
 1. add a story like in [James's Career Changer Game](https://codepen.io/crushford/pen/zezrWR)
 
+
+---
+
+### Regular Expressions(Regex)
+
+Regular expressions are patterns used to match or manipulate a sting of data. The main methods used are **exc().** , **match().** and the **test().** methods.
+
+To construct regex, we have two ways: 
+
+```js
+  const re = /hello/;
+```
+or 
+
+```js
+  const re = new RegExp("hello");
+```
+---
+
+### Regex Example
+
+```js
+  const re = /hello/;
+  const welcomeMessage = "Hello, World";
+  const goodbyeMessage = "Goodbye, World"
+  const welcomePatternTest = re.test(welcomeMessage);
+  const byePatternTest = re.test(welcomeMessage);
+  console.log(welcomePatternTest); // returns true
+  console.log(byePatternTest); // returns false
+```
 ---
 
 <!-- .slide: id="lesson4:homework1" -->
