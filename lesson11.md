@@ -272,8 +272,6 @@ Hint: Very similar to the todo list exercise!
 
 ---
 
----
-
 <!-- .slide: id="lesson20:Libraries" -->
 
 # Libraries
@@ -415,64 +413,146 @@ let map = L.map('mapid');
 // set it to coordinates of ReDI school, zoom level 15
 map.setView([52.531587, 13.384742], 15);
 ```
-
 ---
 
-### Leaflet
+### Recap: Libraries
 
-* Leaflet itself doesn't come with data
-* We can use Mapbox data (which comes from OpenStreetMap)
-* Note - Mapbox is not free, but requires an access token. Check the slack  channel and set it in the `accessToken` property below:
+Libraries are collections of pre-written code that you can use to help you write your own code. They can be used to simplify complex tasks, add functionality to your application, or even just to help you write your code more quickly and efficiently.
 
 ```js
-let layer = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox/streets-v11',
-    tileSize: 512,
-    zoomOffset: -1,
-    accessToken: 'your.mapbox.access.token' // YOUR TOKEN HERE!
-});
-layer.addTo(map);
+const _ = require('lodash');
+
+let array = [1, 2, 3, 4, 5];
+let reversed = _.reverse(array);
+
+console.log(reversed); // [5, 4, 3, 2, 1]
 ```
 
 ---
 
-### Add a marker
+### TypeScript
 
-* We can add markers to the map:
+TypeScript is a statically typed superset of JavaScript that compiles to plain JavaScript. It adds static types to JavaScript, which can help catch errors at compile time rather than at runtime.
 
-```js
-let marker = L.marker([52.531587, 13.384742]);
-marker.addTo(map);
+Before we can use TypeScript, we need to install it. We can do this using npm (Node Package Manager), which is a package manager for JavaScript.
+
+```bash
+npm install -g typescript
 ```
 
 ---
 
-### Add a popup to the marker
+### TypeScript
+
+Here's an example of TypeScript code:
 
 ```js
-let popup = marker.bindPopup("<b>This is ReDI!</b>");
-popup.openPopup();
-```
+// TypeScript code
+let isDone: boolean = false;
+let decimal: number = 6;
+let color: string = "blue";
 
----
-
-### Add a listener
-
-```js
-function onMapClick(e) {
-    console.log("You clicked the map at " + e.latlng);
+function addNumbers(a: number, b: number): number {
+  return a + b;
 }
-map.on('click', onMapClick);
+
+console.log(addNumbers(decimal, 4)); // 10
+
 ```
 
 ---
 
-### Let's play
+### TypeScript
 
-* Add a couple of more markers, e.g. your home, your favorite places in Berlin
-* Can you add a button below the `div` that sets the view of the map to your favorite place? (hint: use `map.setView()` function in your button's `onclick` function)
+To compile TypeScript code to JavaScript, we can use the TypeScript compiler:
+
+```bash
+tsc myfile.ts
+```
+
+---
+
+### React
+
+React is a JavaScript library for building user interfaces, particularly single page applications where you need a fast, interactive user interface. React uses a virtual DOM to make updates to the user interface efficient.
+
+To create a new React application, we can use npx, which is a package runner tool that comes with npm.
+
+```bash
+npx create-react-app my-app
+```
+
+---
+
+### React
+
+Here's an example of a more complex React component that maintains its own state:
+
+```js
+// React code
+import React, { useState } from 'react';
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}
+
+export default Counter;
+```
+
+---
+
+### Angular
+
+Angular is a platform for building web applications. It provides a framework for client-side MVC and MVVM architectures along with components commonly used in rich internet applications.
+
+To create a new Angular application, we can use the Angular CLI. First, we need to install it and then, we can create a new Angular application:
+
+```bash
+npm install -g @angular/cli
+ng new my-app
+```
+
+---
+
+Here's an example of a Angular:
+
+
+```js
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-counter',
+  template: `
+    <p>You clicked {{count}} times</p>
+    <button (click)="increment()">Click me</button>
+  `,
+})
+export class CounterComponent {
+  count = 0;
+
+  increment() {
+    this.count++;
+  }
+}
+```
+
+---
+
+### Differences and Use Cases
+
+* Libraries like lodash or moment.js are used for specific tasks such as working with arrays or dates.
+* TypeScript is used when you want static typing (ability to check the types of variables and expressions at compile-time, before the code is run) in your JavaScript code.
+* React is used for building fast, interactive user interfaces in single page applications. It's good when you have a lot of components that need to interact with each other.
+* Angular is a full-fledged framework for building web applications. It's good when you need a complete solution including things like routing, state management, and form handling.
 
 ---
 
