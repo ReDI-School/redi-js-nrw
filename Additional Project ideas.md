@@ -1,4 +1,4 @@
-Additional Project ideas from [Frontendmentor](https://www.frontendmentor.io/challenges)
+## Additional Project ideas from [Frontendmentor](https://www.frontendmentor.io/challenges)
 
 ## 1. Interactive rating component
 *Level: 1 NEWBIE* </br>
